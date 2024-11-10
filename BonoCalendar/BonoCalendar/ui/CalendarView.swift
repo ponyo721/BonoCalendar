@@ -8,18 +8,34 @@
 import SwiftUI
 
 struct CalendarView: View {
-    var title : String? = nil
+    let configure : CalendarViewConfigure
+    
+    private var mainColorImage : Image?
     
     @State private var todayDate = Date()
     @State private var currentDate = Date()
     
-    init(_ title:String?){
-        self.title = title
+    init(_ configure:CalendarViewConfigure){
+        self.configure = configure
+        initWithConfigure()
+    }
+    
+    mutating func initWithConfigure() {
+        mainColorImage = CustomColorCircle().createFilledCircleImage(color: configure.mainColor ?? .black, diameter: 10)
     }
     
     var body: some View {
         VStack {
-            Text(title ?? "none")
+            VStack {
+                HStack {
+                    mainColorImage?.frame(width: 10, height: 10)
+                    Text(configure.title ?? "")
+                }
+                
+                
+                Text("목표 : ")
+            }
+            
             // 월 이동 버튼과 현재 월 표시
             HStack {
                 Button(action: {
@@ -133,6 +149,6 @@ struct CalendarView: View {
 
 struct CalendarView_Previews: PreviewProvider {
     static var previews: some View {
-        CalendarView("0")
+        CalendarView(CalendarViewConfigure(title: "title", mainColor: .black))
     }
 }

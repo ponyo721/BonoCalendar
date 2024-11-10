@@ -7,9 +7,39 @@
 
 import SwiftUI
 
+protocol CalendarCreateViewDelegate {
+    func actionCreateNewCalendar()
+}
+
 struct CalendarCreateView: View {
+    public var delegate : CalendarCreateViewDelegate?
+    
+    @State private var title: String = ""
+    @State private var mainColor : Color = Color.white
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            Text("Create New Calendar!")
+                .padding(50)
+            TextField("Enter New Calendar Title", text: $title)
+                    .padding()
+                    .background(Color(uiColor: .secondarySystemBackground))
+                    .frame(width: 200)
+            
+            HStack() {
+                Text("Main Color : ")
+                ColorPicker("", selection: $mainColor)
+                    .frame(width: 30)
+            }
+            .padding(50)
+            
+            Button("Save", action: actionSaveBtn)
+        }
+    }
+    
+    func actionSaveBtn() {
+        print("actionSaveBtn")
+        delegate?.actionCreateNewCalendar()
     }
 }
 

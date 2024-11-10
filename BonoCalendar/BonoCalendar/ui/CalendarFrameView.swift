@@ -8,28 +8,64 @@
 import SwiftUI
 
 struct CalendarFrameView: View {
+    @State private var isPresenting = false // 모달 표시 여부를 제어하는 상태 변수
+    
     var body: some View {
-        
-        TabView {
-            
-            CalendarView("1")
-                .tabItem {
-                    Image(systemName: "calendar")
-                    Text("캘린더")
+        VStack {
+            HStack {
+                Text("Title")
+                
+                Button(action: {
+                    actionCreateBtn()
+                }, label: {
+                    Text("Add")
+                })
+                .sheet(isPresented: $isPresenting) {
+                    CalendarCreateView() // 모달로 표시할 뷰
                 }
+                
+            }
+            .padding(5)
             
-            CalendarView("2")
-                .tabItem {
-                    Image(systemName: "calendar")
-                    Text("캘린더")
-                }
-            
-            CalendarCreateView()
-                .tabItem {
-                    Image(systemName: "pencil.circle")
-                    Text("추가")
-                }
+            TabView {
+                
+                
+                CalendarView(CalendarViewConfigure(title: "모든 일정", mainColor: .blue))
+                    .tabItem {
+                        Image(systemName: "calendar")
+                        Text("캘린더")
+                    }
+                
+                CalendarView(CalendarViewConfigure(title: "일정", mainColor: .yellow))
+                    .tabItem {
+                        Image(systemName: "calendar")
+                        Text("캘린더")
+                    }
+                
+                CalendarView(CalendarViewConfigure(title: "가계부", mainColor: .red))
+                    .tabItem {
+                        Image(systemName: "calendar")
+                        Text("캘린더")
+                    }
+                
+                CalendarView(CalendarViewConfigure(title: "생리 주기", mainColor: .systemPink))
+                    .tabItem {
+                        Image(systemName: "calendar")
+                        Text("캘린더")
+                    }
+                
+                CalendarView(CalendarViewConfigure(title: "마라톤", mainColor: .gray))
+                    .tabItem {
+                        Image(systemName: "calendar")
+                        Text("캘린더")
+                    }
+            }
         }
+    }
+    
+    func actionCreateBtn() {
+        print("actionCreateBtn")
+        isPresenting = true
     }
 }
 

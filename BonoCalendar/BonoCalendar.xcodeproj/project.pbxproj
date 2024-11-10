@@ -22,6 +22,8 @@
 		FDB6ADC32CE0AE9600BB6BA3 /* ViewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB6ADC22CE0AE9600BB6BA3 /* ViewManager.swift */; };
 		FDB6ADC52CE0C05400BB6BA3 /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB6ADC42CE0C05400BB6BA3 /* SettingView.swift */; };
 		FDB6ADC72CE0C37000BB6BA3 /* CalendarCreateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB6ADC62CE0C37000BB6BA3 /* CalendarCreateView.swift */; };
+		FDB6ADCA2CE0D49D00BB6BA3 /* CustomColorCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB6ADC92CE0D49D00BB6BA3 /* CustomColorCircle.swift */; };
+		FDB6ADCD2CE0D64C00BB6BA3 /* CalendarViewConfigure.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB6ADCC2CE0D64C00BB6BA3 /* CalendarViewConfigure.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +62,8 @@
 		FDB6ADC22CE0AE9600BB6BA3 /* ViewManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewManager.swift; sourceTree = "<group>"; };
 		FDB6ADC42CE0C05400BB6BA3 /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
 		FDB6ADC62CE0C37000BB6BA3 /* CalendarCreateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarCreateView.swift; sourceTree = "<group>"; };
+		FDB6ADC92CE0D49D00BB6BA3 /* CustomColorCircle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomColorCircle.swift; sourceTree = "<group>"; };
+		FDB6ADCC2CE0D64C00BB6BA3 /* CalendarViewConfigure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewConfigure.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,6 +153,8 @@
 		FD6D538D2CE0A8800055BE12 /* ui */ = {
 			isa = PBXGroup;
 			children = (
+				FDB6ADCB2CE0D62F00BB6BA3 /* data_model */,
+				FDB6ADC82CE0D47A00BB6BA3 /* custom */,
 				FD6D535E2CE0A7080055BE12 /* ContentView.swift */,
 				FD6D538B2CE0A87C0055BE12 /* EnterView.swift */,
 				FD6D538E2CE0A97B0055BE12 /* CalendarView.swift */,
@@ -157,6 +163,22 @@
 				FDB6ADC62CE0C37000BB6BA3 /* CalendarCreateView.swift */,
 			);
 			path = ui;
+			sourceTree = "<group>";
+		};
+		FDB6ADC82CE0D47A00BB6BA3 /* custom */ = {
+			isa = PBXGroup;
+			children = (
+				FDB6ADC92CE0D49D00BB6BA3 /* CustomColorCircle.swift */,
+			);
+			path = custom;
+			sourceTree = "<group>";
+		};
+		FDB6ADCB2CE0D62F00BB6BA3 /* data_model */ = {
+			isa = PBXGroup;
+			children = (
+				FDB6ADCC2CE0D64C00BB6BA3 /* CalendarViewConfigure.swift */,
+			);
+			path = data_model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -289,6 +311,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FDB6ADCA2CE0D49D00BB6BA3 /* CustomColorCircle.swift in Sources */,
+				FDB6ADCD2CE0D64C00BB6BA3 /* CalendarViewConfigure.swift in Sources */,
 				FD6D53662CE0A70B0055BE12 /* Persistence.swift in Sources */,
 				FD6D53692CE0A70B0055BE12 /* BonoCalendar.xcdatamodeld in Sources */,
 				FDB6ADC32CE0AE9600BB6BA3 /* ViewManager.swift in Sources */,
