@@ -7,7 +7,11 @@
 
 import SwiftUI
 
-struct CalendarFrameView: View {
+struct CalendarFrameView: View, CalendarCreateViewDelegate {
+    func actionCreateNewCalendar() {
+        print("[CalendarFrameView] actionCreateNewCalendar")
+    }
+    
     @State private var isPresenting = false // 모달 표시 여부를 제어하는 상태 변수
     
     var body: some View {
@@ -21,7 +25,7 @@ struct CalendarFrameView: View {
                     Text("Add")
                 })
                 .sheet(isPresented: $isPresenting) {
-                    CalendarCreateView() // 모달로 표시할 뷰
+                    CalendarCreateView(delegate: self) // 모달로 표시할 뷰
                 }
                 
             }
@@ -30,7 +34,7 @@ struct CalendarFrameView: View {
             TabView {
                 
                 
-                CalendarView(CalendarViewConfigure(title: "모든 일정", mainColor: .blue))
+                CalendarView(CalendarViewConfigure(title: "모든 일정", mainColor: UIColor(named: "MainColor")))
                     .tabItem {
                         Image(systemName: "calendar")
                         Text("캘린더")

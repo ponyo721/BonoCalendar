@@ -13,6 +13,7 @@ protocol CalendarCreateViewDelegate {
 
 struct CalendarCreateView: View {
     public var delegate : CalendarCreateViewDelegate?
+    @Environment(\.dismiss) var dismiss
     
     @State private var title: String = ""
     @State private var mainColor : Color = Color.white
@@ -33,12 +34,15 @@ struct CalendarCreateView: View {
             }
             .padding(50)
             
-            Button("Save", action: actionSaveBtn)
+            Button("Save") {
+                actionSaveBtn()
+                dismiss()
+            }
         }
     }
     
     func actionSaveBtn() {
-        print("actionSaveBtn")
+        print("[CalendarCreateView] actionSaveBtn")
         delegate?.actionCreateNewCalendar()
     }
 }
