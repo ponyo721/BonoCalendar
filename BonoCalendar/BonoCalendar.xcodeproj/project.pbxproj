@@ -16,6 +16,12 @@
 		FD6D53732CE0A70B0055BE12 /* BonoCalendarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6D53722CE0A70B0055BE12 /* BonoCalendarTests.swift */; };
 		FD6D537D2CE0A70B0055BE12 /* BonoCalendarUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6D537C2CE0A70B0055BE12 /* BonoCalendarUITests.swift */; };
 		FD6D537F2CE0A70B0055BE12 /* BonoCalendarUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6D537E2CE0A70B0055BE12 /* BonoCalendarUITestsLaunchTests.swift */; };
+		FD6D538C2CE0A87C0055BE12 /* EnterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6D538B2CE0A87C0055BE12 /* EnterView.swift */; };
+		FD6D538F2CE0A97B0055BE12 /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6D538E2CE0A97B0055BE12 /* CalendarView.swift */; };
+		FDB6ADC12CE0AC0500BB6BA3 /* CalendarFrameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB6ADC02CE0AC0500BB6BA3 /* CalendarFrameView.swift */; };
+		FDB6ADC32CE0AE9600BB6BA3 /* ViewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB6ADC22CE0AE9600BB6BA3 /* ViewManager.swift */; };
+		FDB6ADC52CE0C05400BB6BA3 /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB6ADC42CE0C05400BB6BA3 /* SettingView.swift */; };
+		FDB6ADC72CE0C37000BB6BA3 /* CalendarCreateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB6ADC62CE0C37000BB6BA3 /* CalendarCreateView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +54,12 @@
 		FD6D53782CE0A70B0055BE12 /* BonoCalendarUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BonoCalendarUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD6D537C2CE0A70B0055BE12 /* BonoCalendarUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BonoCalendarUITests.swift; sourceTree = "<group>"; };
 		FD6D537E2CE0A70B0055BE12 /* BonoCalendarUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BonoCalendarUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		FD6D538B2CE0A87C0055BE12 /* EnterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterView.swift; sourceTree = "<group>"; };
+		FD6D538E2CE0A97B0055BE12 /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
+		FDB6ADC02CE0AC0500BB6BA3 /* CalendarFrameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarFrameView.swift; sourceTree = "<group>"; };
+		FDB6ADC22CE0AE9600BB6BA3 /* ViewManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewManager.swift; sourceTree = "<group>"; };
+		FDB6ADC42CE0C05400BB6BA3 /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
+		FDB6ADC62CE0C37000BB6BA3 /* CalendarCreateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarCreateView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,8 +110,9 @@
 		FD6D535B2CE0A7070055BE12 /* BonoCalendar */ = {
 			isa = PBXGroup;
 			children = (
+				FD6D538D2CE0A8800055BE12 /* ui */,
 				FD6D535C2CE0A7070055BE12 /* BonoCalendarApp.swift */,
-				FD6D535E2CE0A7080055BE12 /* ContentView.swift */,
+				FDB6ADC22CE0AE9600BB6BA3 /* ViewManager.swift */,
 				FD6D53602CE0A70B0055BE12 /* Assets.xcassets */,
 				FD6D53652CE0A70B0055BE12 /* Persistence.swift */,
 				FD6D53672CE0A70B0055BE12 /* BonoCalendar.xcdatamodeld */,
@@ -131,6 +144,19 @@
 				FD6D537E2CE0A70B0055BE12 /* BonoCalendarUITestsLaunchTests.swift */,
 			);
 			path = BonoCalendarUITests;
+			sourceTree = "<group>";
+		};
+		FD6D538D2CE0A8800055BE12 /* ui */ = {
+			isa = PBXGroup;
+			children = (
+				FD6D535E2CE0A7080055BE12 /* ContentView.swift */,
+				FD6D538B2CE0A87C0055BE12 /* EnterView.swift */,
+				FD6D538E2CE0A97B0055BE12 /* CalendarView.swift */,
+				FDB6ADC02CE0AC0500BB6BA3 /* CalendarFrameView.swift */,
+				FDB6ADC42CE0C05400BB6BA3 /* SettingView.swift */,
+				FDB6ADC62CE0C37000BB6BA3 /* CalendarCreateView.swift */,
+			);
+			path = ui;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -265,6 +291,12 @@
 			files = (
 				FD6D53662CE0A70B0055BE12 /* Persistence.swift in Sources */,
 				FD6D53692CE0A70B0055BE12 /* BonoCalendar.xcdatamodeld in Sources */,
+				FDB6ADC32CE0AE9600BB6BA3 /* ViewManager.swift in Sources */,
+				FDB6ADC52CE0C05400BB6BA3 /* SettingView.swift in Sources */,
+				FDB6ADC72CE0C37000BB6BA3 /* CalendarCreateView.swift in Sources */,
+				FDB6ADC12CE0AC0500BB6BA3 /* CalendarFrameView.swift in Sources */,
+				FD6D538F2CE0A97B0055BE12 /* CalendarView.swift in Sources */,
+				FD6D538C2CE0A87C0055BE12 /* EnterView.swift in Sources */,
 				FD6D535F2CE0A7080055BE12 /* ContentView.swift in Sources */,
 				FD6D535D2CE0A7070055BE12 /* BonoCalendarApp.swift in Sources */,
 			);
