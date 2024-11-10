@@ -8,10 +8,6 @@
 import SwiftUI
 
 struct CalendarFrameView: View, CalendarCreateViewDelegate {
-    func actionCreateNewCalendar() {
-        print("[CalendarFrameView] actionCreateNewCalendar")
-    }
-    
     @State private var isPresenting = false // 모달 표시 여부를 제어하는 상태 변수
     
     var body: some View {
@@ -34,7 +30,7 @@ struct CalendarFrameView: View, CalendarCreateViewDelegate {
             TabView {
                 
                 
-                CalendarView(CalendarViewConfigure(title: "모든 일정", mainColor: UIColor(named: "MainColor")))
+                CalendarView(CalendarViewConfigure(title: "모든 일정", mainColor: Color("MainColor") ))
                     .tabItem {
                         Image(systemName: "calendar")
                         Text("캘린더")
@@ -52,7 +48,7 @@ struct CalendarFrameView: View, CalendarCreateViewDelegate {
                         Text("캘린더")
                     }
                 
-                CalendarView(CalendarViewConfigure(title: "생리 주기", mainColor: .systemPink))
+                CalendarView(CalendarViewConfigure(title: "생리 주기", mainColor: .pink))
                     .tabItem {
                         Image(systemName: "calendar")
                         Text("캘린더")
@@ -67,9 +63,15 @@ struct CalendarFrameView: View, CalendarCreateViewDelegate {
         }
     }
     
+    //MARK: - ui action -
     func actionCreateBtn() {
         print("actionCreateBtn")
         isPresenting = true
+    }
+    
+    //MARK: - CalendarCreateViewDelegate -
+    func actionCreateNewCalendar() {
+        print("[CalendarFrameView] actionCreateNewCalendar")
     }
 }
 

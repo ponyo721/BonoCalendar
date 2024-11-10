@@ -8,12 +8,12 @@
 import SwiftUI
 
 struct CalendarView: View {
-    let configure : CalendarViewConfigure
-    
-    private var mainColorImage : Image?
-    
     @State private var todayDate = Date()
     @State private var currentDate = Date()
+    
+    private var mainColorImage : Image?
+    public let configure : CalendarViewConfigure
+    
     
     init(_ configure:CalendarViewConfigure){
         self.configure = configure
@@ -21,7 +21,7 @@ struct CalendarView: View {
     }
     
     mutating func initWithConfigure() {
-        mainColorImage = CustomColorCircle().createFilledCircleImage(color: configure.mainColor ?? .black, diameter: 10)
+        mainColorImage = CustomColorCircle().createFilledCircleImage(color: configure.mainColor, diameter: 10)
     }
     
     var body: some View {
