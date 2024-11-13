@@ -18,12 +18,20 @@
 		FD6D537F2CE0A70B0055BE12 /* BonoCalendarUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6D537E2CE0A70B0055BE12 /* BonoCalendarUITestsLaunchTests.swift */; };
 		FD6D538C2CE0A87C0055BE12 /* EnterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6D538B2CE0A87C0055BE12 /* EnterView.swift */; };
 		FD6D538F2CE0A97B0055BE12 /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6D538E2CE0A97B0055BE12 /* CalendarView.swift */; };
-		FDB6ADC12CE0AC0500BB6BA3 /* CalendarFrameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB6ADC02CE0AC0500BB6BA3 /* CalendarFrameView.swift */; };
-		FDB6ADC32CE0AE9600BB6BA3 /* ViewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB6ADC22CE0AE9600BB6BA3 /* ViewManager.swift */; };
+		FD9184E32CE4CEC500EA543F /* EnterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9184E22CE4CEC500EA543F /* EnterViewModel.swift */; };
+		FD9184E52CE4CFB400EA543F /* CalendarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9184E42CE4CFB400EA543F /* CalendarViewModel.swift */; };
+		FD9184E72CE4CFC300EA543F /* EnterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9184E62CE4CFC300EA543F /* EnterModel.swift */; };
+		FD9184E92CE4CFED00EA543F /* CalendarCreateViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9184E82CE4CFED00EA543F /* CalendarCreateViewModel.swift */; };
+		FD9184EB2CE4D01900EA543F /* CalendarCreateModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9184EA2CE4D01900EA543F /* CalendarCreateModel.swift */; };
+		FD9184ED2CE4D04000EA543F /* SettingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9184EC2CE4D04000EA543F /* SettingViewModel.swift */; };
+		FD9184EF2CE4D05500EA543F /* SettingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9184EE2CE4D05500EA543F /* SettingModel.swift */; };
+		FD9184F12CE4D0A400EA543F /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9184F02CE4D0A400EA543F /* MainViewModel.swift */; };
+		FD9184F32CE4D0AE00EA543F /* MainModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9184F22CE4D0AE00EA543F /* MainModel.swift */; };
+		FDB6ADC12CE0AC0500BB6BA3 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB6ADC02CE0AC0500BB6BA3 /* MainView.swift */; };
 		FDB6ADC52CE0C05400BB6BA3 /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB6ADC42CE0C05400BB6BA3 /* SettingView.swift */; };
 		FDB6ADC72CE0C37000BB6BA3 /* CalendarCreateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB6ADC62CE0C37000BB6BA3 /* CalendarCreateView.swift */; };
 		FDB6ADCA2CE0D49D00BB6BA3 /* CustomColorCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB6ADC92CE0D49D00BB6BA3 /* CustomColorCircle.swift */; };
-		FDB6ADCD2CE0D64C00BB6BA3 /* CalendarViewConfigure.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB6ADCC2CE0D64C00BB6BA3 /* CalendarViewConfigure.swift */; };
+		FDB6ADCD2CE0D64C00BB6BA3 /* CalendarModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB6ADCC2CE0D64C00BB6BA3 /* CalendarModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,12 +66,20 @@
 		FD6D537E2CE0A70B0055BE12 /* BonoCalendarUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BonoCalendarUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		FD6D538B2CE0A87C0055BE12 /* EnterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterView.swift; sourceTree = "<group>"; };
 		FD6D538E2CE0A97B0055BE12 /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
-		FDB6ADC02CE0AC0500BB6BA3 /* CalendarFrameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarFrameView.swift; sourceTree = "<group>"; };
-		FDB6ADC22CE0AE9600BB6BA3 /* ViewManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewManager.swift; sourceTree = "<group>"; };
+		FD9184E22CE4CEC500EA543F /* EnterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterViewModel.swift; sourceTree = "<group>"; };
+		FD9184E42CE4CFB400EA543F /* CalendarViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewModel.swift; sourceTree = "<group>"; };
+		FD9184E62CE4CFC300EA543F /* EnterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterModel.swift; sourceTree = "<group>"; };
+		FD9184E82CE4CFED00EA543F /* CalendarCreateViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarCreateViewModel.swift; sourceTree = "<group>"; };
+		FD9184EA2CE4D01900EA543F /* CalendarCreateModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarCreateModel.swift; sourceTree = "<group>"; };
+		FD9184EC2CE4D04000EA543F /* SettingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewModel.swift; sourceTree = "<group>"; };
+		FD9184EE2CE4D05500EA543F /* SettingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingModel.swift; sourceTree = "<group>"; };
+		FD9184F02CE4D0A400EA543F /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		FD9184F22CE4D0AE00EA543F /* MainModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainModel.swift; sourceTree = "<group>"; };
+		FDB6ADC02CE0AC0500BB6BA3 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		FDB6ADC42CE0C05400BB6BA3 /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
 		FDB6ADC62CE0C37000BB6BA3 /* CalendarCreateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarCreateView.swift; sourceTree = "<group>"; };
 		FDB6ADC92CE0D49D00BB6BA3 /* CustomColorCircle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomColorCircle.swift; sourceTree = "<group>"; };
-		FDB6ADCC2CE0D64C00BB6BA3 /* CalendarViewConfigure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewConfigure.swift; sourceTree = "<group>"; };
+		FDB6ADCC2CE0D64C00BB6BA3 /* CalendarModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,11 +130,11 @@
 		FD6D535B2CE0A7070055BE12 /* BonoCalendar */ = {
 			isa = PBXGroup;
 			children = (
+				FD9184E12CE4CEA400EA543F /* tmp */,
+				FD9184DD2CE4CAA700EA543F /* mvvm */,
 				FD6D538D2CE0A8800055BE12 /* ui */,
 				FD6D535C2CE0A7070055BE12 /* BonoCalendarApp.swift */,
-				FDB6ADC22CE0AE9600BB6BA3 /* ViewManager.swift */,
 				FD6D53602CE0A70B0055BE12 /* Assets.xcassets */,
-				FD6D53652CE0A70B0055BE12 /* Persistence.swift */,
 				FD6D53672CE0A70B0055BE12 /* BonoCalendar.xcdatamodeld */,
 				FD6D53622CE0A70B0055BE12 /* Preview Content */,
 			);
@@ -153,16 +169,64 @@
 		FD6D538D2CE0A8800055BE12 /* ui */ = {
 			isa = PBXGroup;
 			children = (
-				FDB6ADCB2CE0D62F00BB6BA3 /* data_model */,
-				FDB6ADC82CE0D47A00BB6BA3 /* custom */,
-				FD6D535E2CE0A7080055BE12 /* ContentView.swift */,
-				FD6D538B2CE0A87C0055BE12 /* EnterView.swift */,
-				FD6D538E2CE0A97B0055BE12 /* CalendarView.swift */,
-				FDB6ADC02CE0AC0500BB6BA3 /* CalendarFrameView.swift */,
-				FDB6ADC42CE0C05400BB6BA3 /* SettingView.swift */,
-				FDB6ADC62CE0C37000BB6BA3 /* CalendarCreateView.swift */,
 			);
 			path = ui;
+			sourceTree = "<group>";
+		};
+		FD9184DD2CE4CAA700EA543F /* mvvm */ = {
+			isa = PBXGroup;
+			children = (
+				FD9184E02CE4CABF00EA543F /* viewModel */,
+				FD9184DF2CE4CAB900EA543F /* view */,
+				FD9184DE2CE4CAB000EA543F /* model */,
+			);
+			path = mvvm;
+			sourceTree = "<group>";
+		};
+		FD9184DE2CE4CAB000EA543F /* model */ = {
+			isa = PBXGroup;
+			children = (
+				FD9184EA2CE4D01900EA543F /* CalendarCreateModel.swift */,
+				FDB6ADCC2CE0D64C00BB6BA3 /* CalendarModel.swift */,
+				FD9184E62CE4CFC300EA543F /* EnterModel.swift */,
+				FD9184F22CE4D0AE00EA543F /* MainModel.swift */,
+				FD9184EE2CE4D05500EA543F /* SettingModel.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		FD9184DF2CE4CAB900EA543F /* view */ = {
+			isa = PBXGroup;
+			children = (
+				FDB6ADC82CE0D47A00BB6BA3 /* custom */,
+				FDB6ADC62CE0C37000BB6BA3 /* CalendarCreateView.swift */,
+				FD6D538E2CE0A97B0055BE12 /* CalendarView.swift */,
+				FD6D538B2CE0A87C0055BE12 /* EnterView.swift */,
+				FDB6ADC02CE0AC0500BB6BA3 /* MainView.swift */,
+				FDB6ADC42CE0C05400BB6BA3 /* SettingView.swift */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		FD9184E02CE4CABF00EA543F /* viewModel */ = {
+			isa = PBXGroup;
+			children = (
+				FD9184E82CE4CFED00EA543F /* CalendarCreateViewModel.swift */,
+				FD9184E42CE4CFB400EA543F /* CalendarViewModel.swift */,
+				FD9184E22CE4CEC500EA543F /* EnterViewModel.swift */,
+				FD9184F02CE4D0A400EA543F /* MainViewModel.swift */,
+				FD9184EC2CE4D04000EA543F /* SettingViewModel.swift */,
+			);
+			path = viewModel;
+			sourceTree = "<group>";
+		};
+		FD9184E12CE4CEA400EA543F /* tmp */ = {
+			isa = PBXGroup;
+			children = (
+				FD6D535E2CE0A7080055BE12 /* ContentView.swift */,
+				FD6D53652CE0A70B0055BE12 /* Persistence.swift */,
+			);
+			path = tmp;
 			sourceTree = "<group>";
 		};
 		FDB6ADC82CE0D47A00BB6BA3 /* custom */ = {
@@ -171,14 +235,6 @@
 				FDB6ADC92CE0D49D00BB6BA3 /* CustomColorCircle.swift */,
 			);
 			path = custom;
-			sourceTree = "<group>";
-		};
-		FDB6ADCB2CE0D62F00BB6BA3 /* data_model */ = {
-			isa = PBXGroup;
-			children = (
-				FDB6ADCC2CE0D64C00BB6BA3 /* CalendarViewConfigure.swift */,
-			);
-			path = data_model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -312,16 +368,24 @@
 			buildActionMask = 2147483647;
 			files = (
 				FDB6ADCA2CE0D49D00BB6BA3 /* CustomColorCircle.swift in Sources */,
-				FDB6ADCD2CE0D64C00BB6BA3 /* CalendarViewConfigure.swift in Sources */,
+				FD9184E32CE4CEC500EA543F /* EnterViewModel.swift in Sources */,
+				FDB6ADCD2CE0D64C00BB6BA3 /* CalendarModel.swift in Sources */,
+				FD9184EB2CE4D01900EA543F /* CalendarCreateModel.swift in Sources */,
+				FD9184E52CE4CFB400EA543F /* CalendarViewModel.swift in Sources */,
 				FD6D53662CE0A70B0055BE12 /* Persistence.swift in Sources */,
+				FD9184ED2CE4D04000EA543F /* SettingViewModel.swift in Sources */,
 				FD6D53692CE0A70B0055BE12 /* BonoCalendar.xcdatamodeld in Sources */,
-				FDB6ADC32CE0AE9600BB6BA3 /* ViewManager.swift in Sources */,
+				FD9184EF2CE4D05500EA543F /* SettingModel.swift in Sources */,
+				FD9184F32CE4D0AE00EA543F /* MainModel.swift in Sources */,
 				FDB6ADC52CE0C05400BB6BA3 /* SettingView.swift in Sources */,
+				FD9184F12CE4D0A400EA543F /* MainViewModel.swift in Sources */,
+				FD9184E92CE4CFED00EA543F /* CalendarCreateViewModel.swift in Sources */,
 				FDB6ADC72CE0C37000BB6BA3 /* CalendarCreateView.swift in Sources */,
-				FDB6ADC12CE0AC0500BB6BA3 /* CalendarFrameView.swift in Sources */,
+				FDB6ADC12CE0AC0500BB6BA3 /* MainView.swift in Sources */,
 				FD6D538F2CE0A97B0055BE12 /* CalendarView.swift in Sources */,
 				FD6D538C2CE0A87C0055BE12 /* EnterView.swift in Sources */,
 				FD6D535F2CE0A7080055BE12 /* ContentView.swift in Sources */,
+				FD9184E72CE4CFC300EA543F /* EnterModel.swift in Sources */,
 				FD6D535D2CE0A7070055BE12 /* BonoCalendarApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

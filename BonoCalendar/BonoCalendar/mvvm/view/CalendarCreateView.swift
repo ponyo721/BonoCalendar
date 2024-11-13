@@ -7,17 +7,13 @@
 
 import SwiftUI
 
-protocol CalendarCreateViewDelegate {
-    func actionCreateNewCalendar()
-}
-
 struct CalendarCreateView: View {
+    @StateObject private var viewModel = CalendarCreateViewModel()
+    
     @Environment(\.dismiss) var dismiss
     
-    @State private var configure : CalendarViewConfigure = CalendarViewConfigure()
+    @State private var configure : CalendarCreateModel = CalendarCreateModel()
     @State private var mainColor : Color = .black
-    
-    public var delegate : CalendarCreateViewDelegate?
     
     var body: some View {
         VStack {
@@ -46,7 +42,6 @@ struct CalendarCreateView: View {
     
     func actionSaveBtn() {
         print("[CalendarCreateView] actionSaveBtn")
-        delegate?.actionCreateNewCalendar()
     }
 }
 

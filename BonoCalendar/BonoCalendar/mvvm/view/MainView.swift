@@ -1,5 +1,5 @@
 //
-//  CalendarFrameView.swift
+//  MainView.swift
 //  BonoCalendar
 //
 //  Created by 알파카 on 2024/11/10.
@@ -7,8 +7,9 @@
 
 import SwiftUI
 
-struct CalendarFrameView: View, CalendarCreateViewDelegate {
-    @State private var isPresenting = false // 모달 표시 여부를 제어하는 상태 변수
+struct MainView: View {
+    @StateObject private var viewModel = MainViewModel()
+//    @State var
     
     var body: some View {
         VStack {
@@ -16,58 +17,55 @@ struct CalendarFrameView: View, CalendarCreateViewDelegate {
                 Text("Title")
                 
                 Button(action: {
-                    actionCreateBtn()
+                    viewModel.actionEditCalendar()
                 }, label: {
                     Text("Add")
                 })
-                .sheet(isPresented: $isPresenting) {
-                    CalendarCreateView(delegate: self) // 모달로 표시할 뷰
-                }
                 
+                .sheet(isPresented: $viewModel.isShowEditView) {
+                    CalendarCreateView() // 모달로 표시할 뷰
+                }
             }
             .padding(5)
             
             TabView {
-                
-                
-                CalendarView(CalendarViewConfigure(title: "모든 일정", mainColor: Color("MainColor") ))
+                CalendarView(CalendarModel(title: "모든 일정", mainColor: Color("MainColor") ))
                     .tabItem {
                         Image(systemName: "calendar")
                         Text("캘린더")
                     }
                 
-                CalendarView(CalendarViewConfigure(title: "일정", mainColor: .yellow))
+                CalendarView(CalendarModel(title: "일정", mainColor: .yellow))
                     .tabItem {
                         Image(systemName: "calendar")
                         Text("캘린더")
                     }
                 
-                CalendarView(CalendarViewConfigure(title: "가계부", mainColor: .red))
+                CalendarView(CalendarModel(title: "가계부", mainColor: .red))
                     .tabItem {
                         Image(systemName: "calendar")
                         Text("캘린더")
                     }
                 
-                CalendarView(CalendarViewConfigure(title: "생리 주기", mainColor: .pink))
+                CalendarView(CalendarModel(title: "생리 주기", mainColor: .pink))
                     .tabItem {
                         Image(systemName: "calendar")
                         Text("캘린더")
                     }
                 
-                CalendarView(CalendarViewConfigure(title: "마라톤", mainColor: .gray))
+                CalendarView(CalendarModel(title: "마라톤", mainColor: .gray))
                     .tabItem {
                         Image(systemName: "calendar")
                         Text("캘린더")
                     }
-            }
-        }
-    }
-    
-    //MARK: - ui action -
-    func actionCreateBtn() {
-        print("actionCreateBtn")
-        isPresenting = true
-    }
+                
+            } // HStack
+            
+            
+        } // VStack
+        
+        
+    } // View
     
     //MARK: - CalendarCreateViewDelegate -
     func actionCreateNewCalendar() {
@@ -77,6 +75,6 @@ struct CalendarFrameView: View, CalendarCreateViewDelegate {
 
 struct CalendarFrameView_Previews: PreviewProvider {
     static var previews: some View {
-        CalendarFrameView()
+        MainView()
     }
 }

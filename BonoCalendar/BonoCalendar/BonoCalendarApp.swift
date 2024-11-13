@@ -10,12 +10,13 @@ import SwiftUI
 @main
 struct BonoCalendarApp: App {
     let persistenceController = PersistenceController.shared
-    let viewMager : ViewManager? = ViewManager()
 
     var body: some Scene {
         WindowGroup {
-            EnterView()
-                .environment(\.managedObjectContext, persistenceController.container.viewContext)
+//            NavigationView {
+                EnterView()
+                    .environment(\.managedObjectContext, persistenceController.container.viewContext)
+//            }
         }
     }
 }

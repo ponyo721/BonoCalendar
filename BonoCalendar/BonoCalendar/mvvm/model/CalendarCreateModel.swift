@@ -1,15 +1,14 @@
 //
-//  CalendarViewConfigure.swift
+//  CalendarCreateModel.swift
 //  BonoCalendar
 //
-//  Created by 알파카 on 2024/11/10.
+//  Created by 알파카 on 2024/11/13.
 //
 
 import SwiftUI
 
-struct CalendarViewConfigure {
+struct CalendarCreateModel {
     var title : String = ""
     var mainColor : Color = .blue
-    
     
 }

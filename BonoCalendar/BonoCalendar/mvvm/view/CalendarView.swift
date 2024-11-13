@@ -8,14 +8,16 @@
 import SwiftUI
 
 struct CalendarView: View {
+    @StateObject private var viewModel = CalendarViewModel()
+    
     @State private var todayDate = Date()
     @State private var currentDate = Date()
     
     private var mainColorImage : Image?
-    public let configure : CalendarViewConfigure
+    public let configure : CalendarModel
     
     
-    init(_ configure:CalendarViewConfigure){
+    init(_ configure:CalendarModel){
         self.configure = configure
         initWithConfigure()
     }
@@ -29,7 +31,7 @@ struct CalendarView: View {
             VStack {
                 HStack {
                     mainColorImage?.frame(width: 10, height: 10)
-                    Text(configure.title ?? "")
+                    Text(configure.title)
                 }
                 
                 
@@ -38,6 +40,7 @@ struct CalendarView: View {
             
             // 월 이동 버튼과 현재 월 표시
             HStack {
+//                Text("HStack Start")
                 Button(action: {
                     currentDate = Calendar.current.date(byAdding: .month, value: -1, to: currentDate) ?? currentDate
                 }) {
@@ -52,6 +55,7 @@ struct CalendarView: View {
                 }) {
                     Image(systemName: "chevron.right")
                 }
+//                Text("HStack End")
             }
             .padding()
             
@@ -70,15 +74,27 @@ struct CalendarView: View {
             LazyVGrid(columns: rows, spacing: 10) {
                 ForEach(days, id: \.self) { date in
                     if isSameDay(date, as: todayDate) {
-                        Text(dateString(for: date))
-                            .frame(maxWidth: .infinity, minHeight: 40)
-                            .background(isSameMonth(date, as: currentDate) ? Color.yellow.opacity(0.1) : Color.clear)
-                            .cornerRadius(8)
+                        Button(action: {
+                            print("클릭 이벤트 \(date)") // Event Code
+                        }) {
+                            Text(dateString(for: date))
+                                .frame(maxWidth: .infinity, minHeight: 40)
+                                .background(isSameMonth(date, as: currentDate) ? Color.yellow.opacity(0.1) : Color.clear)
+                                .cornerRadius(8)
+                                .foregroundColor(Color.black)
+                        }
+                        
+                        
                     }else {
-                        Text(dateString(for: date))
-                            .frame(maxWidth: .infinity, minHeight: 40)
-                            .background(isSameMonth(date, as: currentDate) ? Color.blue.opacity(0.1) : Color.clear)
-                            .cornerRadius(8)
+                        Button(action: {
+                            print("클릭 이벤트 \(date)") // Event Code
+                        }) {
+                            Text(dateString(for: date))
+                                .frame(maxWidth: .infinity, minHeight: 40)
+                                .background(isSameMonth(date, as: currentDate) ? Color.blue.opacity(0.1) : Color.clear)
+                                .cornerRadius(8)
+                                .foregroundColor(Color.black)
+                        }
                     }
                     
                 }
@@ -149,6 +165,6 @@ struct CalendarView: View {
 
 struct CalendarView_Previews: PreviewProvider {
     static var previews: some View {
-        CalendarView(CalendarViewConfigure(title: "title", mainColor: .black))
+        CalendarView(CalendarModel(title: "title", mainColor: .black))
     }
 }
