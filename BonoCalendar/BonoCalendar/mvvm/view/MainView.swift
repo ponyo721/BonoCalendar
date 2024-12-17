@@ -35,29 +35,14 @@ struct MainView: View {
                         Text("캘린더")
                     }
                 
-                CalendarView(CalendarModel(title: "일정", mainColor: .yellow))
-                    .tabItem {
-                        Image(systemName: "calendar")
-                        Text("캘린더")
-                    }
                 
-                CalendarView(CalendarModel(title: "가계부", mainColor: .red))
-                    .tabItem {
-                        Image(systemName: "calendar")
-                        Text("캘린더")
-                    }
-                
-                CalendarView(CalendarModel(title: "생리 주기", mainColor: .pink))
-                    .tabItem {
-                        Image(systemName: "calendar")
-                        Text("캘린더")
-                    }
-                
-                CalendarView(CalendarModel(title: "마라톤", mainColor: .gray))
-                    .tabItem {
-                        Image(systemName: "calendar")
-                        Text("캘린더")
-                    }
+                ForEach(viewModel.mainTabViewList, id: \.color) { tab in
+                    CalendarView(CalendarModel(title: tab.title, mainColor: tab.color ))
+                        .tabItem {
+                            Image(systemName: tab.iconName)
+                            Text(tab.title)
+                        }
+                }
                 
             } // HStack
             

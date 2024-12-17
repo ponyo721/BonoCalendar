@@ -132,7 +132,6 @@
 			children = (
 				FD9184E12CE4CEA400EA543F /* tmp */,
 				FD9184DD2CE4CAA700EA543F /* mvvm */,
-				FD6D538D2CE0A8800055BE12 /* ui */,
 				FD6D535C2CE0A7070055BE12 /* BonoCalendarApp.swift */,
 				FD6D53602CE0A70B0055BE12 /* Assets.xcassets */,
 				FD6D53672CE0A70B0055BE12 /* BonoCalendar.xcdatamodeld */,
@@ -164,13 +163,6 @@
 				FD6D537E2CE0A70B0055BE12 /* BonoCalendarUITestsLaunchTests.swift */,
 			);
 			path = BonoCalendarUITests;
-			sourceTree = "<group>";
-		};
-		FD6D538D2CE0A8800055BE12 /* ui */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ui;
 			sourceTree = "<group>";
 		};
 		FD9184DD2CE4CAA700EA543F /* mvvm */ = {
