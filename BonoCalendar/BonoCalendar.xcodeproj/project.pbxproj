@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D8507E402D11A7E900149299 /* ScheduleUpdatesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8507E3F2D11A7E900149299 /* ScheduleUpdatesView.swift */; };
+		D8507E422D11AA8A00149299 /* ScheduleUpdatesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8507E412D11AA8A00149299 /* ScheduleUpdatesViewModel.swift */; };
+		D8507E442D11AADB00149299 /* ScheduleUpdatesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8507E432D11AADB00149299 /* ScheduleUpdatesModel.swift */; };
 		FD6D535D2CE0A7070055BE12 /* BonoCalendarApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6D535C2CE0A7070055BE12 /* BonoCalendarApp.swift */; };
 		FD6D535F2CE0A7080055BE12 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6D535E2CE0A7080055BE12 /* ContentView.swift */; };
 		FD6D53612CE0A70B0055BE12 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD6D53602CE0A70B0055BE12 /* Assets.xcassets */; };
@@ -52,6 +55,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D8507E3F2D11A7E900149299 /* ScheduleUpdatesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleUpdatesView.swift; sourceTree = "<group>"; };
+		D8507E412D11AA8A00149299 /* ScheduleUpdatesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleUpdatesViewModel.swift; sourceTree = "<group>"; };
+		D8507E432D11AADB00149299 /* ScheduleUpdatesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleUpdatesModel.swift; sourceTree = "<group>"; };
 		FD6D53592CE0A7070055BE12 /* BonoCalendar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BonoCalendar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD6D535C2CE0A7070055BE12 /* BonoCalendarApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BonoCalendarApp.swift; sourceTree = "<group>"; };
 		FD6D535E2CE0A7080055BE12 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -183,6 +189,7 @@
 				FD9184E62CE4CFC300EA543F /* EnterModel.swift */,
 				FD9184F22CE4D0AE00EA543F /* MainModel.swift */,
 				FD9184EE2CE4D05500EA543F /* SettingModel.swift */,
+				D8507E432D11AADB00149299 /* ScheduleUpdatesModel.swift */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -194,6 +201,7 @@
 				FDB6ADC62CE0C37000BB6BA3 /* CalendarCreateView.swift */,
 				FD6D538E2CE0A97B0055BE12 /* CalendarView.swift */,
 				FD6D538B2CE0A87C0055BE12 /* EnterView.swift */,
+				D8507E3F2D11A7E900149299 /* ScheduleUpdatesView.swift */,
 				FDB6ADC02CE0AC0500BB6BA3 /* MainView.swift */,
 				FDB6ADC42CE0C05400BB6BA3 /* SettingView.swift */,
 			);
@@ -208,6 +216,7 @@
 				FD9184E22CE4CEC500EA543F /* EnterViewModel.swift */,
 				FD9184F02CE4D0A400EA543F /* MainViewModel.swift */,
 				FD9184EC2CE4D04000EA543F /* SettingViewModel.swift */,
+				D8507E412D11AA8A00149299 /* ScheduleUpdatesViewModel.swift */,
 			);
 			path = viewModel;
 			sourceTree = "<group>";
@@ -359,17 +368,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D8507E402D11A7E900149299 /* ScheduleUpdatesView.swift in Sources */,
 				FDB6ADCA2CE0D49D00BB6BA3 /* CustomColorCircle.swift in Sources */,
 				FD9184E32CE4CEC500EA543F /* EnterViewModel.swift in Sources */,
 				FDB6ADCD2CE0D64C00BB6BA3 /* CalendarModel.swift in Sources */,
 				FD9184EB2CE4D01900EA543F /* CalendarCreateModel.swift in Sources */,
 				FD9184E52CE4CFB400EA543F /* CalendarViewModel.swift in Sources */,
 				FD6D53662CE0A70B0055BE12 /* Persistence.swift in Sources */,
+				D8507E442D11AADB00149299 /* ScheduleUpdatesModel.swift in Sources */,
 				FD9184ED2CE4D04000EA543F /* SettingViewModel.swift in Sources */,
 				FD6D53692CE0A70B0055BE12 /* BonoCalendar.xcdatamodeld in Sources */,
 				FD9184EF2CE4D05500EA543F /* SettingModel.swift in Sources */,
 				FD9184F32CE4D0AE00EA543F /* MainModel.swift in Sources */,
 				FDB6ADC52CE0C05400BB6BA3 /* SettingView.swift in Sources */,
+				D8507E422D11AA8A00149299 /* ScheduleUpdatesViewModel.swift in Sources */,
 				FD9184F12CE4D0A400EA543F /* MainViewModel.swift in Sources */,
 				FD9184E92CE4CFED00EA543F /* CalendarCreateViewModel.swift in Sources */,
 				FDB6ADC72CE0C37000BB6BA3 /* CalendarCreateView.swift in Sources */,

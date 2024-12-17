@@ -10,7 +10,13 @@ import Foundation
 final class CalendarViewModel : ObservableObject {
     @Published var model: CalendarModel = CalendarModel()
     
+    @Published var showModal: Bool = false
+    
     init() {
         print("[CalendarViewModel] init")
+    }
+    
+    func actionClickDate(_ date:Date) {
+        showModal = true
     }
 }

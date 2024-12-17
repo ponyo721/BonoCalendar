@@ -40,7 +40,7 @@ struct CalendarView: View {
             
             // 월 이동 버튼과 현재 월 표시
             HStack {
-//                Text("HStack Start")
+                //                Text("HStack Start")
                 Button(action: {
                     currentDate = Calendar.current.date(byAdding: .month, value: -1, to: currentDate) ?? currentDate
                 }) {
@@ -55,7 +55,7 @@ struct CalendarView: View {
                 }) {
                     Image(systemName: "chevron.right")
                 }
-//                Text("HStack End")
+                //                Text("HStack End")
             }
             .padding()
             
@@ -87,7 +87,7 @@ struct CalendarView: View {
                         
                     }else {
                         Button(action: {
-                            print("클릭 이벤트 \(date)") // Event Code
+                            viewModel.actionClickDate(date)
                         }) {
                             Text(dateString(for: date))
                                 .frame(maxWidth: .infinity, minHeight: 40)
@@ -95,6 +95,9 @@ struct CalendarView: View {
                                 .cornerRadius(8)
                                 .foregroundColor(Color.black)
                         }
+                        .sheet(isPresented: $viewModel.showModal) {
+                            ScheduleUpdatesView()
+                        } //Button 끝
                     }
                     
                 }
