@@ -42,6 +42,7 @@ struct CalendarCreateView: View {
     
     func actionSaveBtn() {
         print("[CalendarCreateView] actionSaveBtn")
+        viewModel.createNewCalendar()
     }
 }
 

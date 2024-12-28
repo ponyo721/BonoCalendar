@@ -9,7 +9,7 @@ import SwiftUI
 
 struct MainView: View {
     @StateObject private var viewModel = MainViewModel()
-//    @State var
+    @State var selectedTabTitle:String?
     
     var body: some View {
         VStack {
@@ -17,9 +17,21 @@ struct MainView: View {
                 Text("Title")
                 
                 Button(action: {
-                    viewModel.actionEditCalendar()
+                    if !viewModel.actionAddCalendar() {
+                        print("show alert create fail")
+                        viewModel.actionShowMaxCalendarAlert()
+                    }
                 }, label: {
                     Text("Add")
+                })
+                .alert(isPresented: $viewModel.isShowShowMaxCalendarAlert) {
+                    Alert(title: Text("Title"), message: Text("This is a alert message"), dismissButton: .default(Text("Dismiss")))
+                }
+                
+                Button(action: {
+                    viewModel.actionRemoveCalendar(selectedTabTitle)
+                }, label: {
+                    Text("Remove")
                 })
                 
                 .sheet(isPresented: $viewModel.isShowEditView) {
@@ -28,26 +40,21 @@ struct MainView: View {
             }
             .padding(5)
             
-            TabView {
-                CalendarView(CalendarModel(title: "모든 일정", mainColor: Color("MainColor") ))
-                    .tabItem {
-                        Image(systemName: "calendar")
-                        Text("캘린더")
-                    }
-                
-                
-                ForEach(viewModel.mainTabViewList, id: \.color) { tab in
-                    CalendarView(CalendarModel(title: tab.title, mainColor: tab.color ))
+            TabView() {
+                ForEach(viewModel.mainTabViewList, id: \.mainColor) { item in
+                    CalendarView(CalendarModel(title: item.title, mainColor: item.mainColor ))
                         .tabItem {
-                            Image(systemName: tab.iconName)
-                            Text(tab.title)
+                            Image(systemName: item.iconName ?? "")
+                            Text(item.title)
                         }
+                        .tag(item.title)
                 }
-                
-            } // HStack
-            
-            
-        } // VStack
+            }
+            .onChange(of: selectedTabTitle) { newValue in
+                print("selectedTab: \(newValue ?? "")")
+            }
+               
+        }
         
         
     } // View

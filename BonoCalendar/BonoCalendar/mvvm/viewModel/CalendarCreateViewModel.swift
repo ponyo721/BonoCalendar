@@ -8,5 +8,13 @@
 import Foundation
 
 final class CalendarCreateViewModel : ObservableObject {
+    @Published var model: CalendarCreateModel = CalendarCreateModel()
+    
+    
+    func createNewCalendar() {
+        print("[CalendarCreateViewModel] createNewCalendar")
+        
+        
+    }
     
 }

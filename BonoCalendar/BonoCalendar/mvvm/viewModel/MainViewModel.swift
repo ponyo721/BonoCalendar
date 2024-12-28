@@ -15,19 +15,32 @@ struct TabViewModel {
 
 final class MainViewModel : ObservableObject {
     @Published var isShowEditView: Bool = false
-    @Published var mainTabViewList: [TabViewModel] = []
+    @Published var isShowShowMaxCalendarAlert: Bool = false
+    
+    @Published var mainTabViewList: [CalendarItem] = GlobalData.sharedInstance.calndarList
     
     init() {
         print("MainViewModel init")
-        
-        mainTabViewList.append(TabViewModel(title: "일정", color: .yellow, iconName: "calendar"))
-        mainTabViewList.append(TabViewModel(title:  "가계부", color: .red, iconName: "calendar"))
-        mainTabViewList.append(TabViewModel(title: "마라톤", color: .green, iconName: "calendar"))
-//        mainTabViewList.append(TabViewModel(title: "생리 주기", color: .pink, iconName: "calendar"))
     }
  
-    func actionEditCalendar() {
-        print("CalendarFrameViewModel actionEditCalendar")
+    func actionAddCalendar() -> Bool {
+        print("[MainViewModel] actionAddCalendar")
+        
+        guard mainTabViewList.count < GlobalData.sharedInstance.calendarMaxCount else {
+            print("[MainViewModel] already calender max count")
+            return false
+        }
+        
         isShowEditView = true
+        return true
+    }
+    
+    func actionRemoveCalendar(_ selectedTabTitle:String?) {
+        print("[MainViewModel] actionRemoveCalendar \(selectedTabTitle ?? "")")
+    }
+    
+    func actionShowMaxCalendarAlert() {
+        print("[MainViewModel] actionShowMaxCalendarAlert")
+        isShowShowMaxCalendarAlert = true
     }
 }
