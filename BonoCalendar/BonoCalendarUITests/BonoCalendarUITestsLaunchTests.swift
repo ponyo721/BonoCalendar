@@ -2,7 +2,7 @@
 //  BonoCalendarUITestsLaunchTests.swift
 //  BonoCalendarUITests
 //
-//  Created by 알파카 on 2024/11/10.
+//  Created by byeongho park on 12/30/24.
 //
 
 import XCTest
@@ -17,6 +17,7 @@ final class BonoCalendarUITestsLaunchTests: XCTestCase {
         continueAfterFailure = false
     }
 
+    @MainActor
     func testLaunch() throws {
         let app = XCUIApplication()
         app.launch()

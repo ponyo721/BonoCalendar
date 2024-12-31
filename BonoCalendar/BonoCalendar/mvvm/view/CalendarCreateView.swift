@@ -23,7 +23,7 @@ struct CalendarCreateView: View {
                 .padding(50)
             TextField("Enter New Calendar Title", text: $configure.title)
                     .padding()
-                    .background(Color(uiColor: .secondarySystemBackground))
+                    .background(Color .blue)
                     .frame(width: 200)
             
             HStack() {

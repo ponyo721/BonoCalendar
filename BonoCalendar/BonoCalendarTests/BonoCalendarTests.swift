@@ -2,11 +2,10 @@
 //  BonoCalendarTests.swift
 //  BonoCalendarTests
 //
-//  Created by 알파카 on 2024/11/10.
+//  Created by byeongho park on 12/30/24.
 //
 
 import XCTest
-@testable import BonoCalendar
 
 final class BonoCalendarTests: XCTestCase {
 
@@ -28,7 +27,7 @@ final class BonoCalendarTests: XCTestCase {
 
     func testPerformanceExample() throws {
         // This is an example of a performance test case.
-        self.measure {
+        measure {
             // Put the code you want to measure the time of here.
         }
     }

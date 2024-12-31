@@ -10,6 +10,9 @@ import SwiftUI
 class CustomColorCircle {
     
     func createFilledCircleImage(color: Color, diameter: CGFloat) -> Image? {
+#if os(macOS)
+        return nil
+#elseif os(iOS)
         let renderer = UIGraphicsImageRenderer(size: CGSize(width: diameter, height: diameter))
         let image = renderer.image { context in
             // 색상을 지정하여 원을 그립니다
@@ -19,5 +22,6 @@ class CustomColorCircle {
         }
         return Image(uiImage: image)
             .resizable()
+#endif
     }
 }

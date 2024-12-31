@@ -2,21 +2,17 @@
 //  BonoCalendarApp.swift
 //  BonoCalendar
 //
-//  Created by 알파카 on 2024/11/10.
+//  Created by byeongho park on 12/30/24.
 //
 
 import SwiftUI
 
 @main
 struct BonoCalendarApp: App {
-    let persistenceController = PersistenceController.shared
-
     var body: some Scene {
         WindowGroup {
-//            NavigationView {
-                EnterView()
-                    .environment(\.managedObjectContext, persistenceController.container.viewContext)
-//            }
+            EnterView()
+                .frame(minWidth: 700, maxHeight: 300)
         }
     }
 }

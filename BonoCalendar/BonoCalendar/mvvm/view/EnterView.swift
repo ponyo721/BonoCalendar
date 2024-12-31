@@ -11,21 +11,28 @@ struct EnterView: View {
     @StateObject private var viewModel = EnterViewModel()
     
     var body: some View {
-        NavigationView {
-            VStack {
-                Text("Hello BonoCalendar")
-                    .padding(3)
+        VStack {
+            Text("Hello BonoCalendar")
+                .padding(3)
+            
+            Button(action: {
+                viewModel.actionGoCalendar()
                 
-                Button(action: {
-                    viewModel.actionGoCalendar()
-                }, label: {
-                    Text("Go Calendar")
-                })
                 
-                .fullScreenCover(isPresented: $viewModel.isLoggedIn) {
-                    MainView()
-                }
+            }, label: {
+                Text("Go Calendar")
+            })
+#if os(macOS)
+            .sheet(isPresented: $viewModel.isLoggedIn) {
+                MainView()
+                    .scaledToFit()
             }
+#elseif os(iOS)
+            .fullScreenCover(isPresented: $viewModel.isLoggedIn) {
+                MainView()
+            }
+#endif
+            
         }
     }
 }

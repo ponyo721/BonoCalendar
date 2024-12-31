@@ -5,7 +5,7 @@
 //  Created by 알파카 on 2024/11/13.
 //
 
-import Foundation
+import SwiftUI
 
 final class EnterViewModel : ObservableObject {
     @Published var isLoggedIn: Bool = false
@@ -25,5 +25,13 @@ final class EnterViewModel : ObservableObject {
         
         // login success
         isLoggedIn = true
+        
+        
+#if os(macOS)
+        NSApplication.shared.keyWindow?.contentView? = NSHostingView(rootView: MainView())
+#elseif os(iOS)
+        
+#endif
+        
     }
 }

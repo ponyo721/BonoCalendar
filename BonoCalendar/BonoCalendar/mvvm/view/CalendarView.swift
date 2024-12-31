@@ -13,8 +13,8 @@ struct CalendarView: View {
     @State private var todayDate = Date()
     @State private var currentDate = Date()
     
-    private var mainColorImage : Image?
-    public let configure : CalendarModel
+    private var mainColor: Color = .blue
+    public let configure: CalendarModel
     
     
     init(_ configure:CalendarModel){
@@ -23,14 +23,16 @@ struct CalendarView: View {
     }
     
     mutating func initWithConfigure() {
-        mainColorImage = CustomColorCircle().createFilledCircleImage(color: configure.mainColor, diameter: 10)
+        mainColor = configure.mainColor
     }
     
     var body: some View {
         VStack {
             VStack {
                 HStack {
-                    mainColorImage?.frame(width: 10, height: 10)
+                    Circle()
+                        .fill(mainColor)
+                        .frame(width: 10, height: 10)
                     Text(configure.title)
                 }
                 
@@ -96,8 +98,10 @@ struct CalendarView: View {
                                 .foregroundColor(Color.black)
                         }
                         .sheet(isPresented: $viewModel.showModal) {
-                            ScheduleUpdatesView()
+                            ScheduleUpdatesView(isShowSchduleUpdateView: $viewModel.showModal)
                         } //Button 끝
+                        
+                        
                     }
                     
                 }

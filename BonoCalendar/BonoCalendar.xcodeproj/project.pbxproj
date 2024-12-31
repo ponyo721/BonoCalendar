@@ -3,113 +3,66 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 77;
 	objects = {
 
-/* Begin PBXBuildFile section */
-		D8507E402D11A7E900149299 /* ScheduleUpdatesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8507E3F2D11A7E900149299 /* ScheduleUpdatesView.swift */; };
-		D8507E422D11AA8A00149299 /* ScheduleUpdatesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8507E412D11AA8A00149299 /* ScheduleUpdatesViewModel.swift */; };
-		D8507E442D11AADB00149299 /* ScheduleUpdatesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8507E432D11AADB00149299 /* ScheduleUpdatesModel.swift */; };
-		D8507E462D1AD49900149299 /* GlobalData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8507E452D1AD49900149299 /* GlobalData.swift */; };
-		D8507E492D1AD53500149299 /* CalendarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8507E482D1AD53500149299 /* CalendarItem.swift */; };
-		D8507E4B2D1AD6A100149299 /* CalendarContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8507E4A2D1AD6A100149299 /* CalendarContent.swift */; };
-		FD6D535D2CE0A7070055BE12 /* BonoCalendarApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6D535C2CE0A7070055BE12 /* BonoCalendarApp.swift */; };
-		FD6D535F2CE0A7080055BE12 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6D535E2CE0A7080055BE12 /* ContentView.swift */; };
-		FD6D53612CE0A70B0055BE12 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD6D53602CE0A70B0055BE12 /* Assets.xcassets */; };
-		FD6D53642CE0A70B0055BE12 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD6D53632CE0A70B0055BE12 /* Preview Assets.xcassets */; };
-		FD6D53662CE0A70B0055BE12 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6D53652CE0A70B0055BE12 /* Persistence.swift */; };
-		FD6D53692CE0A70B0055BE12 /* BonoCalendar.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FD6D53672CE0A70B0055BE12 /* BonoCalendar.xcdatamodeld */; };
-		FD6D53732CE0A70B0055BE12 /* BonoCalendarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6D53722CE0A70B0055BE12 /* BonoCalendarTests.swift */; };
-		FD6D537D2CE0A70B0055BE12 /* BonoCalendarUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6D537C2CE0A70B0055BE12 /* BonoCalendarUITests.swift */; };
-		FD6D537F2CE0A70B0055BE12 /* BonoCalendarUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6D537E2CE0A70B0055BE12 /* BonoCalendarUITestsLaunchTests.swift */; };
-		FD6D538C2CE0A87C0055BE12 /* EnterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6D538B2CE0A87C0055BE12 /* EnterView.swift */; };
-		FD6D538F2CE0A97B0055BE12 /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6D538E2CE0A97B0055BE12 /* CalendarView.swift */; };
-		FD9184E32CE4CEC500EA543F /* EnterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9184E22CE4CEC500EA543F /* EnterViewModel.swift */; };
-		FD9184E52CE4CFB400EA543F /* CalendarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9184E42CE4CFB400EA543F /* CalendarViewModel.swift */; };
-		FD9184E72CE4CFC300EA543F /* EnterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9184E62CE4CFC300EA543F /* EnterModel.swift */; };
-		FD9184E92CE4CFED00EA543F /* CalendarCreateViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9184E82CE4CFED00EA543F /* CalendarCreateViewModel.swift */; };
-		FD9184EB2CE4D01900EA543F /* CalendarCreateModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9184EA2CE4D01900EA543F /* CalendarCreateModel.swift */; };
-		FD9184ED2CE4D04000EA543F /* SettingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9184EC2CE4D04000EA543F /* SettingViewModel.swift */; };
-		FD9184EF2CE4D05500EA543F /* SettingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9184EE2CE4D05500EA543F /* SettingModel.swift */; };
-		FD9184F12CE4D0A400EA543F /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9184F02CE4D0A400EA543F /* MainViewModel.swift */; };
-		FD9184F32CE4D0AE00EA543F /* MainModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9184F22CE4D0AE00EA543F /* MainModel.swift */; };
-		FDB6ADC12CE0AC0500BB6BA3 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB6ADC02CE0AC0500BB6BA3 /* MainView.swift */; };
-		FDB6ADC52CE0C05400BB6BA3 /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB6ADC42CE0C05400BB6BA3 /* SettingView.swift */; };
-		FDB6ADC72CE0C37000BB6BA3 /* CalendarCreateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB6ADC62CE0C37000BB6BA3 /* CalendarCreateView.swift */; };
-		FDB6ADCA2CE0D49D00BB6BA3 /* CustomColorCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB6ADC92CE0D49D00BB6BA3 /* CustomColorCircle.swift */; };
-		FDB6ADCD2CE0D64C00BB6BA3 /* CalendarModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB6ADCC2CE0D64C00BB6BA3 /* CalendarModel.swift */; };
-/* End PBXBuildFile section */
-
 /* Begin PBXContainerItemProxy section */
-		FD6D536F2CE0A70B0055BE12 /* PBXContainerItemProxy */ = {
+		3642C2FD2D227F8D00E39411 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = FD6D53512CE0A7070055BE12 /* Project object */;
+			containerPortal = 3642C2E32D227F8C00E39411 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = FD6D53582CE0A7070055BE12;
+			remoteGlobalIDString = 3642C2EA2D227F8C00E39411;
 			remoteInfo = BonoCalendar;
 		};
-		FD6D53792CE0A70B0055BE12 /* PBXContainerItemProxy */ = {
+		3642C3072D227F8D00E39411 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = FD6D53512CE0A7070055BE12 /* Project object */;
+			containerPortal = 3642C2E32D227F8C00E39411 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = FD6D53582CE0A7070055BE12;
+			remoteGlobalIDString = 3642C2EA2D227F8C00E39411;
 			remoteInfo = BonoCalendar;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		D8507E3F2D11A7E900149299 /* ScheduleUpdatesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleUpdatesView.swift; sourceTree = "<group>"; };
-		D8507E412D11AA8A00149299 /* ScheduleUpdatesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleUpdatesViewModel.swift; sourceTree = "<group>"; };
-		D8507E432D11AADB00149299 /* ScheduleUpdatesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleUpdatesModel.swift; sourceTree = "<group>"; };
-		D8507E452D1AD49900149299 /* GlobalData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalData.swift; sourceTree = "<group>"; };
-		D8507E482D1AD53500149299 /* CalendarItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarItem.swift; sourceTree = "<group>"; };
-		D8507E4A2D1AD6A100149299 /* CalendarContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarContent.swift; sourceTree = "<group>"; };
-		FD6D53592CE0A7070055BE12 /* BonoCalendar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BonoCalendar.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		FD6D535C2CE0A7070055BE12 /* BonoCalendarApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BonoCalendarApp.swift; sourceTree = "<group>"; };
-		FD6D535E2CE0A7080055BE12 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		FD6D53602CE0A70B0055BE12 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		FD6D53632CE0A70B0055BE12 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		FD6D53652CE0A70B0055BE12 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
-		FD6D53682CE0A70B0055BE12 /* BonoCalendar.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BonoCalendar.xcdatamodel; sourceTree = "<group>"; };
-		FD6D536E2CE0A70B0055BE12 /* BonoCalendarTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BonoCalendarTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		FD6D53722CE0A70B0055BE12 /* BonoCalendarTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BonoCalendarTests.swift; sourceTree = "<group>"; };
-		FD6D53782CE0A70B0055BE12 /* BonoCalendarUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BonoCalendarUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		FD6D537C2CE0A70B0055BE12 /* BonoCalendarUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BonoCalendarUITests.swift; sourceTree = "<group>"; };
-		FD6D537E2CE0A70B0055BE12 /* BonoCalendarUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BonoCalendarUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		FD6D538B2CE0A87C0055BE12 /* EnterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterView.swift; sourceTree = "<group>"; };
-		FD6D538E2CE0A97B0055BE12 /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
-		FD9184E22CE4CEC500EA543F /* EnterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterViewModel.swift; sourceTree = "<group>"; };
-		FD9184E42CE4CFB400EA543F /* CalendarViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewModel.swift; sourceTree = "<group>"; };
-		FD9184E62CE4CFC300EA543F /* EnterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterModel.swift; sourceTree = "<group>"; };
-		FD9184E82CE4CFED00EA543F /* CalendarCreateViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarCreateViewModel.swift; sourceTree = "<group>"; };
-		FD9184EA2CE4D01900EA543F /* CalendarCreateModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarCreateModel.swift; sourceTree = "<group>"; };
-		FD9184EC2CE4D04000EA543F /* SettingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewModel.swift; sourceTree = "<group>"; };
-		FD9184EE2CE4D05500EA543F /* SettingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingModel.swift; sourceTree = "<group>"; };
-		FD9184F02CE4D0A400EA543F /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
-		FD9184F22CE4D0AE00EA543F /* MainModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainModel.swift; sourceTree = "<group>"; };
-		FDB6ADC02CE0AC0500BB6BA3 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
-		FDB6ADC42CE0C05400BB6BA3 /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
-		FDB6ADC62CE0C37000BB6BA3 /* CalendarCreateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarCreateView.swift; sourceTree = "<group>"; };
-		FDB6ADC92CE0D49D00BB6BA3 /* CustomColorCircle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomColorCircle.swift; sourceTree = "<group>"; };
-		FDB6ADCC2CE0D64C00BB6BA3 /* CalendarModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarModel.swift; sourceTree = "<group>"; };
+		3642C2EB2D227F8C00E39411 /* BonoCalendar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BonoCalendar.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3642C2FC2D227F8D00E39411 /* BonoCalendarTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BonoCalendarTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3642C3062D227F8D00E39411 /* BonoCalendarUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BonoCalendarUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		3642C2ED2D227F8C00E39411 /* BonoCalendar */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = BonoCalendar;
+			sourceTree = "<group>";
+		};
+		3642C2FF2D227F8D00E39411 /* BonoCalendarTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = BonoCalendarTests;
+			sourceTree = "<group>";
+		};
+		3642C3092D227F8D00E39411 /* BonoCalendarUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = BonoCalendarUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
 /* Begin PBXFrameworksBuildPhase section */
-		FD6D53562CE0A7070055BE12 /* Frameworks */ = {
+		3642C2E82D227F8C00E39411 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FD6D536B2CE0A70B0055BE12 /* Frameworks */ = {
+		3642C2F92D227F8D00E39411 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FD6D53752CE0A70B0055BE12 /* Frameworks */ = {
+		3642C3032D227F8D00E39411 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -119,259 +72,157 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		D8507E472D1AD51E00149299 /* commonModel */ = {
+		3642C2E22D227F8C00E39411 = {
 			isa = PBXGroup;
 			children = (
-				D8507E452D1AD49900149299 /* GlobalData.swift */,
-				D8507E482D1AD53500149299 /* CalendarItem.swift */,
-				D8507E4A2D1AD6A100149299 /* CalendarContent.swift */,
-			);
-			path = commonModel;
-			sourceTree = "<group>";
-		};
-		FD6D53502CE0A7070055BE12 = {
-			isa = PBXGroup;
-			children = (
-				FD6D535B2CE0A7070055BE12 /* BonoCalendar */,
-				FD6D53712CE0A70B0055BE12 /* BonoCalendarTests */,
-				FD6D537B2CE0A70B0055BE12 /* BonoCalendarUITests */,
-				FD6D535A2CE0A7070055BE12 /* Products */,
+				3642C2ED2D227F8C00E39411 /* BonoCalendar */,
+				3642C2FF2D227F8D00E39411 /* BonoCalendarTests */,
+				3642C3092D227F8D00E39411 /* BonoCalendarUITests */,
+				3642C2EC2D227F8C00E39411 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		FD6D535A2CE0A7070055BE12 /* Products */ = {
+		3642C2EC2D227F8C00E39411 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				FD6D53592CE0A7070055BE12 /* BonoCalendar.app */,
-				FD6D536E2CE0A70B0055BE12 /* BonoCalendarTests.xctest */,
-				FD6D53782CE0A70B0055BE12 /* BonoCalendarUITests.xctest */,
+				3642C2EB2D227F8C00E39411 /* BonoCalendar.app */,
+				3642C2FC2D227F8D00E39411 /* BonoCalendarTests.xctest */,
+				3642C3062D227F8D00E39411 /* BonoCalendarUITests.xctest */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		FD6D535B2CE0A7070055BE12 /* BonoCalendar */ = {
-			isa = PBXGroup;
-			children = (
-				FD9184E12CE4CEA400EA543F /* tmp */,
-				D8507E472D1AD51E00149299 /* commonModel */,
-				FD9184DD2CE4CAA700EA543F /* mvvm */,
-				FD6D535C2CE0A7070055BE12 /* BonoCalendarApp.swift */,
-				FD6D53602CE0A70B0055BE12 /* Assets.xcassets */,
-				FD6D53672CE0A70B0055BE12 /* BonoCalendar.xcdatamodeld */,
-				FD6D53622CE0A70B0055BE12 /* Preview Content */,
-			);
-			path = BonoCalendar;
-			sourceTree = "<group>";
-		};
-		FD6D53622CE0A70B0055BE12 /* Preview Content */ = {
-			isa = PBXGroup;
-			children = (
-				FD6D53632CE0A70B0055BE12 /* Preview Assets.xcassets */,
-			);
-			path = "Preview Content";
-			sourceTree = "<group>";
-		};
-		FD6D53712CE0A70B0055BE12 /* BonoCalendarTests */ = {
-			isa = PBXGroup;
-			children = (
-				FD6D53722CE0A70B0055BE12 /* BonoCalendarTests.swift */,
-			);
-			path = BonoCalendarTests;
-			sourceTree = "<group>";
-		};
-		FD6D537B2CE0A70B0055BE12 /* BonoCalendarUITests */ = {
-			isa = PBXGroup;
-			children = (
-				FD6D537C2CE0A70B0055BE12 /* BonoCalendarUITests.swift */,
-				FD6D537E2CE0A70B0055BE12 /* BonoCalendarUITestsLaunchTests.swift */,
-			);
-			path = BonoCalendarUITests;
-			sourceTree = "<group>";
-		};
-		FD9184DD2CE4CAA700EA543F /* mvvm */ = {
-			isa = PBXGroup;
-			children = (
-				FD9184E02CE4CABF00EA543F /* viewModel */,
-				FD9184DF2CE4CAB900EA543F /* view */,
-				FD9184DE2CE4CAB000EA543F /* model */,
-			);
-			path = mvvm;
-			sourceTree = "<group>";
-		};
-		FD9184DE2CE4CAB000EA543F /* model */ = {
-			isa = PBXGroup;
-			children = (
-				FD9184EA2CE4D01900EA543F /* CalendarCreateModel.swift */,
-				FDB6ADCC2CE0D64C00BB6BA3 /* CalendarModel.swift */,
-				FD9184E62CE4CFC300EA543F /* EnterModel.swift */,
-				FD9184F22CE4D0AE00EA543F /* MainModel.swift */,
-				FD9184EE2CE4D05500EA543F /* SettingModel.swift */,
-				D8507E432D11AADB00149299 /* ScheduleUpdatesModel.swift */,
-			);
-			path = model;
-			sourceTree = "<group>";
-		};
-		FD9184DF2CE4CAB900EA543F /* view */ = {
-			isa = PBXGroup;
-			children = (
-				FDB6ADC82CE0D47A00BB6BA3 /* custom */,
-				FDB6ADC62CE0C37000BB6BA3 /* CalendarCreateView.swift */,
-				FD6D538E2CE0A97B0055BE12 /* CalendarView.swift */,
-				FD6D538B2CE0A87C0055BE12 /* EnterView.swift */,
-				D8507E3F2D11A7E900149299 /* ScheduleUpdatesView.swift */,
-				FDB6ADC02CE0AC0500BB6BA3 /* MainView.swift */,
-				FDB6ADC42CE0C05400BB6BA3 /* SettingView.swift */,
-			);
-			path = view;
-			sourceTree = "<group>";
-		};
-		FD9184E02CE4CABF00EA543F /* viewModel */ = {
-			isa = PBXGroup;
-			children = (
-				FD9184E82CE4CFED00EA543F /* CalendarCreateViewModel.swift */,
-				FD9184E42CE4CFB400EA543F /* CalendarViewModel.swift */,
-				FD9184E22CE4CEC500EA543F /* EnterViewModel.swift */,
-				FD9184F02CE4D0A400EA543F /* MainViewModel.swift */,
-				FD9184EC2CE4D04000EA543F /* SettingViewModel.swift */,
-				D8507E412D11AA8A00149299 /* ScheduleUpdatesViewModel.swift */,
-			);
-			path = viewModel;
-			sourceTree = "<group>";
-		};
-		FD9184E12CE4CEA400EA543F /* tmp */ = {
-			isa = PBXGroup;
-			children = (
-				FD6D535E2CE0A7080055BE12 /* ContentView.swift */,
-				FD6D53652CE0A70B0055BE12 /* Persistence.swift */,
-			);
-			path = tmp;
-			sourceTree = "<group>";
-		};
-		FDB6ADC82CE0D47A00BB6BA3 /* custom */ = {
-			isa = PBXGroup;
-			children = (
-				FDB6ADC92CE0D49D00BB6BA3 /* CustomColorCircle.swift */,
-			);
-			path = custom;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		FD6D53582CE0A7070055BE12 /* BonoCalendar */ = {
+		3642C2EA2D227F8C00E39411 /* BonoCalendar */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = FD6D53822CE0A70B0055BE12 /* Build configuration list for PBXNativeTarget "BonoCalendar" */;
+			buildConfigurationList = 3642C3102D227F8D00E39411 /* Build configuration list for PBXNativeTarget "BonoCalendar" */;
 			buildPhases = (
-				FD6D53552CE0A7070055BE12 /* Sources */,
-				FD6D53562CE0A7070055BE12 /* Frameworks */,
-				FD6D53572CE0A7070055BE12 /* Resources */,
+				3642C2E72D227F8C00E39411 /* Sources */,
+				3642C2E82D227F8C00E39411 /* Frameworks */,
+				3642C2E92D227F8C00E39411 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				3642C2ED2D227F8C00E39411 /* BonoCalendar */,
 			);
 			name = BonoCalendar;
+			packageProductDependencies = (
+			);
 			productName = BonoCalendar;
-			productReference = FD6D53592CE0A7070055BE12 /* BonoCalendar.app */;
+			productReference = 3642C2EB2D227F8C00E39411 /* BonoCalendar.app */;
 			productType = "com.apple.product-type.application";
 		};
-		FD6D536D2CE0A70B0055BE12 /* BonoCalendarTests */ = {
+		3642C2FB2D227F8D00E39411 /* BonoCalendarTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = FD6D53852CE0A70B0055BE12 /* Build configuration list for PBXNativeTarget "BonoCalendarTests" */;
+			buildConfigurationList = 3642C3132D227F8D00E39411 /* Build configuration list for PBXNativeTarget "BonoCalendarTests" */;
 			buildPhases = (
-				FD6D536A2CE0A70B0055BE12 /* Sources */,
-				FD6D536B2CE0A70B0055BE12 /* Frameworks */,
-				FD6D536C2CE0A70B0055BE12 /* Resources */,
+				3642C2F82D227F8D00E39411 /* Sources */,
+				3642C2F92D227F8D00E39411 /* Frameworks */,
+				3642C2FA2D227F8D00E39411 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				FD6D53702CE0A70B0055BE12 /* PBXTargetDependency */,
+				3642C2FE2D227F8D00E39411 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				3642C2FF2D227F8D00E39411 /* BonoCalendarTests */,
 			);
 			name = BonoCalendarTests;
+			packageProductDependencies = (
+			);
 			productName = BonoCalendarTests;
-			productReference = FD6D536E2CE0A70B0055BE12 /* BonoCalendarTests.xctest */;
+			productReference = 3642C2FC2D227F8D00E39411 /* BonoCalendarTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		FD6D53772CE0A70B0055BE12 /* BonoCalendarUITests */ = {
+		3642C3052D227F8D00E39411 /* BonoCalendarUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = FD6D53882CE0A70B0055BE12 /* Build configuration list for PBXNativeTarget "BonoCalendarUITests" */;
+			buildConfigurationList = 3642C3162D227F8D00E39411 /* Build configuration list for PBXNativeTarget "BonoCalendarUITests" */;
 			buildPhases = (
-				FD6D53742CE0A70B0055BE12 /* Sources */,
-				FD6D53752CE0A70B0055BE12 /* Frameworks */,
-				FD6D53762CE0A70B0055BE12 /* Resources */,
+				3642C3022D227F8D00E39411 /* Sources */,
+				3642C3032D227F8D00E39411 /* Frameworks */,
+				3642C3042D227F8D00E39411 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				FD6D537A2CE0A70B0055BE12 /* PBXTargetDependency */,
+				3642C3082D227F8D00E39411 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				3642C3092D227F8D00E39411 /* BonoCalendarUITests */,
 			);
 			name = BonoCalendarUITests;
+			packageProductDependencies = (
+			);
 			productName = BonoCalendarUITests;
-			productReference = FD6D53782CE0A70B0055BE12 /* BonoCalendarUITests.xctest */;
+			productReference = 3642C3062D227F8D00E39411 /* BonoCalendarUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		FD6D53512CE0A7070055BE12 /* Project object */ = {
+		3642C2E32D227F8C00E39411 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1430;
-				LastUpgradeCheck = 1430;
+				LastSwiftUpdateCheck = 1600;
+				LastUpgradeCheck = 1600;
 				TargetAttributes = {
-					FD6D53582CE0A7070055BE12 = {
-						CreatedOnToolsVersion = 14.3.1;
+					3642C2EA2D227F8C00E39411 = {
+						CreatedOnToolsVersion = 16.0;
 					};
-					FD6D536D2CE0A70B0055BE12 = {
-						CreatedOnToolsVersion = 14.3.1;
-						TestTargetID = FD6D53582CE0A7070055BE12;
+					3642C2FB2D227F8D00E39411 = {
+						CreatedOnToolsVersion = 16.0;
+						TestTargetID = 3642C2EA2D227F8C00E39411;
 					};
-					FD6D53772CE0A70B0055BE12 = {
-						CreatedOnToolsVersion = 14.3.1;
-						TestTargetID = FD6D53582CE0A7070055BE12;
+					3642C3052D227F8D00E39411 = {
+						CreatedOnToolsVersion = 16.0;
+						TestTargetID = 3642C2EA2D227F8C00E39411;
 					};
 				};
 			};
-			buildConfigurationList = FD6D53542CE0A7070055BE12 /* Build configuration list for PBXProject "BonoCalendar" */;
-			compatibilityVersion = "Xcode 14.0";
+			buildConfigurationList = 3642C2E62D227F8C00E39411 /* Build configuration list for PBXProject "BonoCalendar" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				Base,
 			);
-			mainGroup = FD6D53502CE0A7070055BE12;
-			productRefGroup = FD6D535A2CE0A7070055BE12 /* Products */;
+			mainGroup = 3642C2E22D227F8C00E39411;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 3642C2EC2D227F8C00E39411 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				FD6D53582CE0A7070055BE12 /* BonoCalendar */,
-				FD6D536D2CE0A70B0055BE12 /* BonoCalendarTests */,
-				FD6D53772CE0A70B0055BE12 /* BonoCalendarUITests */,
+				3642C2EA2D227F8C00E39411 /* BonoCalendar */,
+				3642C2FB2D227F8D00E39411 /* BonoCalendarTests */,
+				3642C3052D227F8D00E39411 /* BonoCalendarUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		FD6D53572CE0A7070055BE12 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				FD6D53642CE0A70B0055BE12 /* Preview Assets.xcassets in Resources */,
-				FD6D53612CE0A70B0055BE12 /* Assets.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		FD6D536C2CE0A70B0055BE12 /* Resources */ = {
+		3642C2E92D227F8C00E39411 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FD6D53762CE0A70B0055BE12 /* Resources */ = {
+		3642C2FA2D227F8D00E39411 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3642C3042D227F8D00E39411 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -381,76 +232,48 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		FD6D53552CE0A7070055BE12 /* Sources */ = {
+		3642C2E72D227F8C00E39411 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D8507E402D11A7E900149299 /* ScheduleUpdatesView.swift in Sources */,
-				FDB6ADCA2CE0D49D00BB6BA3 /* CustomColorCircle.swift in Sources */,
-				FD9184E32CE4CEC500EA543F /* EnterViewModel.swift in Sources */,
-				FDB6ADCD2CE0D64C00BB6BA3 /* CalendarModel.swift in Sources */,
-				D8507E492D1AD53500149299 /* CalendarItem.swift in Sources */,
-				FD9184EB2CE4D01900EA543F /* CalendarCreateModel.swift in Sources */,
-				FD9184E52CE4CFB400EA543F /* CalendarViewModel.swift in Sources */,
-				D8507E462D1AD49900149299 /* GlobalData.swift in Sources */,
-				FD6D53662CE0A70B0055BE12 /* Persistence.swift in Sources */,
-				D8507E442D11AADB00149299 /* ScheduleUpdatesModel.swift in Sources */,
-				FD9184ED2CE4D04000EA543F /* SettingViewModel.swift in Sources */,
-				FD6D53692CE0A70B0055BE12 /* BonoCalendar.xcdatamodeld in Sources */,
-				FD9184EF2CE4D05500EA543F /* SettingModel.swift in Sources */,
-				FD9184F32CE4D0AE00EA543F /* MainModel.swift in Sources */,
-				FDB6ADC52CE0C05400BB6BA3 /* SettingView.swift in Sources */,
-				D8507E422D11AA8A00149299 /* ScheduleUpdatesViewModel.swift in Sources */,
-				FD9184F12CE4D0A400EA543F /* MainViewModel.swift in Sources */,
-				FD9184E92CE4CFED00EA543F /* CalendarCreateViewModel.swift in Sources */,
-				FDB6ADC72CE0C37000BB6BA3 /* CalendarCreateView.swift in Sources */,
-				FDB6ADC12CE0AC0500BB6BA3 /* MainView.swift in Sources */,
-				FD6D538F2CE0A97B0055BE12 /* CalendarView.swift in Sources */,
-				FD6D538C2CE0A87C0055BE12 /* EnterView.swift in Sources */,
-				FD6D535F2CE0A7080055BE12 /* ContentView.swift in Sources */,
-				D8507E4B2D1AD6A100149299 /* CalendarContent.swift in Sources */,
-				FD9184E72CE4CFC300EA543F /* EnterModel.swift in Sources */,
-				FD6D535D2CE0A7070055BE12 /* BonoCalendarApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FD6D536A2CE0A70B0055BE12 /* Sources */ = {
+		3642C2F82D227F8D00E39411 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FD6D53732CE0A70B0055BE12 /* BonoCalendarTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FD6D53742CE0A70B0055BE12 /* Sources */ = {
+		3642C3022D227F8D00E39411 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FD6D537F2CE0A70B0055BE12 /* BonoCalendarUITestsLaunchTests.swift in Sources */,
-				FD6D537D2CE0A70B0055BE12 /* BonoCalendarUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		FD6D53702CE0A70B0055BE12 /* PBXTargetDependency */ = {
+		3642C2FE2D227F8D00E39411 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = FD6D53582CE0A7070055BE12 /* BonoCalendar */;
-			targetProxy = FD6D536F2CE0A70B0055BE12 /* PBXContainerItemProxy */;
+			target = 3642C2EA2D227F8C00E39411 /* BonoCalendar */;
+			targetProxy = 3642C2FD2D227F8D00E39411 /* PBXContainerItemProxy */;
 		};
-		FD6D537A2CE0A70B0055BE12 /* PBXTargetDependency */ = {
+		3642C3082D227F8D00E39411 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = FD6D53582CE0A7070055BE12 /* BonoCalendar */;
-			targetProxy = FD6D53792CE0A70B0055BE12 /* PBXContainerItemProxy */;
+			target = 3642C2EA2D227F8C00E39411 /* BonoCalendar */;
+			targetProxy = 3642C3072D227F8D00E39411 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		FD6D53802CE0A70B0055BE12 /* Debug */ = {
+		3642C30E2D227F8D00E39411 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -483,7 +306,8 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -497,20 +321,20 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = iphoneos;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
-		FD6D53812CE0A70B0055BE12 /* Release */ = {
+		3642C30F2D227F8D00E39411 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -543,7 +367,8 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
@@ -551,205 +376,213 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
-				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
-				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
-		FD6D53832CE0A70B0055BE12 /* Debug */ = {
+		3642C3112D227F8D00E39411 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = BonoCalendar/BonoCalendar.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"BonoCalendar/Preview Content\"";
-				DEVELOPMENT_TEAM = DW83XL6B4B;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
-				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 14.7;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = bhpark.BonoCalendar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = "1,2,7";
+				XROS_DEPLOYMENT_TARGET = 2.0;
 			};
 			name = Debug;
 		};
-		FD6D53842CE0A70B0055BE12 /* Release */ = {
+		3642C3122D227F8D00E39411 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = BonoCalendar/BonoCalendar.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"BonoCalendar/Preview Content\"";
-				DEVELOPMENT_TEAM = DW83XL6B4B;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
-				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 14.7;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = bhpark.BonoCalendar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = "1,2,7";
+				XROS_DEPLOYMENT_TARGET = 2.0;
 			};
 			name = Release;
 		};
-		FD6D53862CE0A70B0055BE12 /* Debug */ = {
+		3642C3142D227F8D00E39411 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = DW83XL6B4B;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				MACOSX_DEPLOYMENT_TARGET = 14.7;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = bhpark.BonoCalendarTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = "1,2,7";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BonoCalendar.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/BonoCalendar";
+				XROS_DEPLOYMENT_TARGET = 2.0;
 			};
 			name = Debug;
 		};
-		FD6D53872CE0A70B0055BE12 /* Release */ = {
+		3642C3152D227F8D00E39411 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = DW83XL6B4B;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				MACOSX_DEPLOYMENT_TARGET = 14.7;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = bhpark.BonoCalendarTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = "1,2,7";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BonoCalendar.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/BonoCalendar";
+				XROS_DEPLOYMENT_TARGET = 2.0;
 			};
 			name = Release;
 		};
-		FD6D53892CE0A70B0055BE12 /* Debug */ = {
+		3642C3172D227F8D00E39411 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = DW83XL6B4B;
 				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				MACOSX_DEPLOYMENT_TARGET = 14.7;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = bhpark.BonoCalendarUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = "1,2,7";
 				TEST_TARGET_NAME = BonoCalendar;
+				XROS_DEPLOYMENT_TARGET = 2.0;
 			};
 			name = Debug;
 		};
-		FD6D538A2CE0A70B0055BE12 /* Release */ = {
+		3642C3182D227F8D00E39411 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = DW83XL6B4B;
 				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				MACOSX_DEPLOYMENT_TARGET = 14.7;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = bhpark.BonoCalendarUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = "1,2,7";
 				TEST_TARGET_NAME = BonoCalendar;
+				XROS_DEPLOYMENT_TARGET = 2.0;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		FD6D53542CE0A7070055BE12 /* Build configuration list for PBXProject "BonoCalendar" */ = {
+		3642C2E62D227F8C00E39411 /* Build configuration list for PBXProject "BonoCalendar" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				FD6D53802CE0A70B0055BE12 /* Debug */,
-				FD6D53812CE0A70B0055BE12 /* Release */,
+				3642C30E2D227F8D00E39411 /* Debug */,
+				3642C30F2D227F8D00E39411 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		FD6D53822CE0A70B0055BE12 /* Build configuration list for PBXNativeTarget "BonoCalendar" */ = {
+		3642C3102D227F8D00E39411 /* Build configuration list for PBXNativeTarget "BonoCalendar" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				FD6D53832CE0A70B0055BE12 /* Debug */,
-				FD6D53842CE0A70B0055BE12 /* Release */,
+				3642C3112D227F8D00E39411 /* Debug */,
+				3642C3122D227F8D00E39411 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		FD6D53852CE0A70B0055BE12 /* Build configuration list for PBXNativeTarget "BonoCalendarTests" */ = {
+		3642C3132D227F8D00E39411 /* Build configuration list for PBXNativeTarget "BonoCalendarTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				FD6D53862CE0A70B0055BE12 /* Debug */,
-				FD6D53872CE0A70B0055BE12 /* Release */,
+				3642C3142D227F8D00E39411 /* Debug */,
+				3642C3152D227F8D00E39411 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		FD6D53882CE0A70B0055BE12 /* Build configuration list for PBXNativeTarget "BonoCalendarUITests" */ = {
+		3642C3162D227F8D00E39411 /* Build configuration list for PBXNativeTarget "BonoCalendarUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				FD6D53892CE0A70B0055BE12 /* Debug */,
-				FD6D538A2CE0A70B0055BE12 /* Release */,
+				3642C3172D227F8D00E39411 /* Debug */,
+				3642C3182D227F8D00E39411 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		FD6D53672CE0A70B0055BE12 /* BonoCalendar.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				FD6D53682CE0A70B0055BE12 /* BonoCalendar.xcdatamodel */,
-			);
-			currentVersion = FD6D53682CE0A70B0055BE12 /* BonoCalendar.xcdatamodel */;
-			path = BonoCalendar.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
-	rootObject = FD6D53512CE0A7070055BE12 /* Project object */;
+	rootObject = 3642C2E32D227F8C00E39411 /* Project object */;
 }
