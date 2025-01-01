@@ -17,14 +17,11 @@ struct MainView: View {
                 Text("Title")
                 
                 Button(action: {
-                    if !viewModel.actionAddCalendar() {
-                        print("show alert create fail")
-                        viewModel.actionShowMaxCalendarAlert()
-                    }
+                    viewModel.actionAddCalendar()
                 }, label: {
                     Text("Add")
                 })
-                .alert(isPresented: $viewModel.isShowShowMaxCalendarAlert) {
+                .alert(isPresented: $viewModel.isShowMaxCalendarAlert) {
                     Alert(title: Text("Title"), message: Text("This is a alert message"), dismissButton: .default(Text("Dismiss")))
                 }
                 
@@ -33,7 +30,15 @@ struct MainView: View {
                 }, label: {
                     Text("Remove")
                 })
+                .alert(isPresented: $viewModel.isShowRemoveCalendarAlert) {
+                    Alert(title: Text("Remove Calendar Title"), message: Text("This is a remove calendar alert"), primaryButton: .default(Text("primaryButton"), action: {
+                        print("action primaryButton")
+                    }), secondaryButton: .default(Text("secondaryButton"), action: {
+                        print("action secondaryButton")
+                    }) )
+                }
                 
+                //
                 .sheet(isPresented: $viewModel.isShowEditView) {
                     CalendarCreateView() // 모달로 표시할 뷰
                 }
