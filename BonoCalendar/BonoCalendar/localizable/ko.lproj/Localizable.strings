@@ -1,0 +1,17 @@
+/* 
+  Localizable.strings
+  BonoCalendar
+
+  Created by 박병호 on 1/8/25.
+  
+*/
+
+ADD_CALENDAR_BTN_TITLE = "캘린더 추가";
+DELETE_CALENDAR_BTN_TITLE = "캘린더 삭제";
+DAY_MON = "월";
+DAY_TUE = "화";
+DAY_WED = "수";
+DAY_THU = "목";
+DAY_FRI = "금";
+DAY_SAT = "토";
+DAY_SUN = "일";

@@ -45,4 +45,9 @@ final class MainViewModel : ObservableObject {
         print("[MainViewModel] actionShowMaxCalendarAlert")
         isShowMaxCalendarAlert = true
     }
+    
+    func actionSwitchCalendar(_ title:String) {
+        print("[MainViewModel] actionSwitchCalendar: \(title)")
+        GlobalData.sharedInstance.currentCalendarTitle = title
+    }
 }

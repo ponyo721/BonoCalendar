@@ -11,10 +11,14 @@ final class CalendarCreateViewModel : ObservableObject {
     @Published var model: CalendarCreateModel = CalendarCreateModel()
     
     
-    func createNewCalendar() {
+    func createNewCalendar(_ calendarInfo:CalendarCreateModel) {
         print("[CalendarCreateViewModel] createNewCalendar")
         
-        
+        if GlobalData.sharedInstance.calndarList.count >= GlobalData.sharedInstance.calendarMaxCount {
+            print("[CalendarCreateViewModel] calendarMaxCount")
+        } else {
+            GlobalData.sharedInstance.calndarList.append(CalendarItem(title:calendarInfo.title, mainColor: calendarInfo.mainColor))
+        }
     }
     
 }

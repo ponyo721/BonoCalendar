@@ -42,7 +42,12 @@ struct CalendarCreateView: View {
     
     func actionSaveBtn() {
         print("[CalendarCreateView] actionSaveBtn")
-        viewModel.createNewCalendar()
+        
+        var calendarCreateModel:CalendarCreateModel = CalendarCreateModel()
+        calendarCreateModel.title = "명철이랑 데이트"
+        calendarCreateModel.mainColor = .brown
+        
+        viewModel.createNewCalendar(calendarCreateModel)
     }
 }
 

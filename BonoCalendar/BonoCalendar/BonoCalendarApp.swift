@@ -12,7 +12,7 @@ struct BonoCalendarApp: App {
     var body: some Scene {
         WindowGroup {
             EnterView()
-                .frame(minWidth: 700, maxHeight: 300)
+                .frame(minWidth: 700, minHeight: 400)
         }
     }
 }

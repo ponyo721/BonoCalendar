@@ -14,12 +14,11 @@ struct MainView: View {
     var body: some View {
         VStack {
             HStack {
-                Text("Title")
-                
+                Spacer()    // 우측 정렬
                 Button(action: {
                     viewModel.actionAddCalendar()
                 }, label: {
-                    Text("Add")
+                    Text("+")   // 캘린더 추가
                 })
                 .alert(isPresented: $viewModel.isShowMaxCalendarAlert) {
                     Alert(title: Text("Title"), message: Text("This is a alert message"), dismissButton: .default(Text("Dismiss")))
@@ -28,8 +27,9 @@ struct MainView: View {
                 Button(action: {
                     viewModel.actionRemoveCalendar(selectedTabTitle)
                 }, label: {
-                    Text("Remove")
+                    Text("-")   // 캘린더 삭제
                 })
+                
                 .alert(isPresented: $viewModel.isShowRemoveCalendarAlert) {
                     Alert(title: Text("Remove Calendar Title"), message: Text("This is a remove calendar alert"), primaryButton: .default(Text("primaryButton"), action: {
                         print("action primaryButton")
@@ -43,6 +43,7 @@ struct MainView: View {
                     CalendarCreateView() // 모달로 표시할 뷰
                 }
             }
+//            .position(CGPointMake(100, 0))
             .padding(5)
             
             TabView() {
@@ -57,6 +58,7 @@ struct MainView: View {
             }
             .onChange(of: selectedTabTitle) { newValue in
                 print("selectedTab: \(newValue ?? "")")
+                viewModel.actionSwitchCalendar(newValue ?? "")
             }
                
         }
@@ -70,7 +72,7 @@ struct MainView: View {
     }
 }
 
-struct CalendarFrameView_Previews: PreviewProvider {
+struct MainView_Previews: PreviewProvider {
     static var previews: some View {
         MainView()
     }

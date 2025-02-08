@@ -12,6 +12,7 @@ class GlobalData {
     public let calendarMaxCount: Int = 5
     
     var calndarList: [CalendarItem] = []
+    var currentCalendarTitle: String = "모든 일정"
     
     func initGlobalData() -> Bool {
 //        do {
@@ -26,5 +27,10 @@ class GlobalData {
         
         
         return true
+    }
+    
+    func addNewCalendar() {
+        
+        
     }
 }
