@@ -9,12 +9,15 @@ import SwiftUI
 
 struct MainView: View {
     @StateObject private var viewModel = MainViewModel()
-    @State var selectedTabTitle:String?
+    @State var selectedTabTitle:String = ""
     
     var body: some View {
         VStack {
             HStack {
-                Spacer()    // 우측 정렬
+                // 이후 월단위 or 년단위 이동을 위한 버튼 생성
+//                Text("월/년 단위 빠른 이동")
+                
+                Spacer()    // 사용 가능한 전체 공간을 띄워버리기
                 Button(action: {
                     viewModel.actionAddCalendar()
                 }, label: {
@@ -25,16 +28,16 @@ struct MainView: View {
                 }
                 
                 Button(action: {
-                    viewModel.actionRemoveCalendar(selectedTabTitle)
+                    viewModel.actionRemoveCalendar()
                 }, label: {
                     Text("-")   // 캘린더 삭제
                 })
-                
                 .alert(isPresented: $viewModel.isShowRemoveCalendarAlert) {
-                    Alert(title: Text("Remove Calendar Title"), message: Text("This is a remove calendar alert"), primaryButton: .default(Text("primaryButton"), action: {
-                        print("action primaryButton")
-                    }), secondaryButton: .default(Text("secondaryButton"), action: {
-                        print("action secondaryButton")
+                    Alert(title: Text("Remove Calendar Title"), message: Text("This is a remove calendar alert"), primaryButton: .default(Text("Remove"), action: {
+                        print("action Remove")
+                        viewModel.actionAlertConfirm()
+                    }), secondaryButton: .default(Text("Cancel"), action: {
+                        print("action Cancel")
                     }) )
                 }
                 
@@ -46,7 +49,7 @@ struct MainView: View {
 //            .position(CGPointMake(100, 0))
             .padding(5)
             
-            TabView() {
+            TabView(selection: $selectedTabTitle) {
                 ForEach(viewModel.mainTabViewList, id: \.mainColor) { item in
                     CalendarView(CalendarModel(title: item.title, mainColor: item.mainColor ))
                         .tabItem {
@@ -56,10 +59,11 @@ struct MainView: View {
                         .tag(item.title)
                 }
             }
-            .onChange(of: selectedTabTitle) { newValue in
-                print("selectedTab: \(newValue ?? "")")
-                viewModel.actionSwitchCalendar(newValue ?? "")
-            }
+            .onChange(of: selectedTabTitle, perform: {newValue in
+                print("selectedTab: \(newValue)")
+                selectedTabTitle = newValue
+                viewModel.actionSwitchCalendar(newValue)
+            })
                
         }
         

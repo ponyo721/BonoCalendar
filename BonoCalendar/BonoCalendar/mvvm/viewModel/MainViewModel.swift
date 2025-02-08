@@ -17,11 +17,18 @@ final class MainViewModel : ObservableObject {
     @Published var isShowEditView: Bool = false
     @Published var isShowMaxCalendarAlert: Bool = false
     @Published var isShowRemoveCalendarAlert: Bool = false
+    @Published var isShowCantRemoveCalendarAlert: Bool = false
     
     @Published var mainTabViewList: [CalendarItem] = GlobalData.sharedInstance.calndarList
     
     init() {
         print("MainViewModel init")
+        
+//        // load data
+//        guard GlobalData.sharedInstance.initGlobalData() else {
+//            print("[EnterViewModel] init Global data fail")
+//            return
+//        }
     }
  
     func actionAddCalendar() {
@@ -36,9 +43,13 @@ final class MainViewModel : ObservableObject {
         isShowEditView = true
     }
     
-    func actionRemoveCalendar(_ selectedTabTitle:String?) {
-        print("[MainViewModel] actionRemoveCalendar \(selectedTabTitle ?? "")")
-        isShowRemoveCalendarAlert = true
+    func actionRemoveCalendar() {
+        print("[MainViewModel] actionRemoveCalendar: \(GlobalData.sharedInstance.currentCalendarTitle)")
+        if GlobalData.sharedInstance.currentCalendarTitle == "모든 일정" {
+            isShowCantRemoveCalendarAlert = true
+        } else {
+            isShowRemoveCalendarAlert = true
+        }
     }
     
     func actionShowMaxCalendarAlert() {
@@ -49,5 +60,23 @@ final class MainViewModel : ObservableObject {
     func actionSwitchCalendar(_ title:String) {
         print("[MainViewModel] actionSwitchCalendar: \(title)")
         GlobalData.sharedInstance.currentCalendarTitle = title
+    }
+    
+    //MARK: - remove alert action -
+    func actionAlertConfirm() {
+        print("[MainViewModel] actionAlertConfirm: \(GlobalData.sharedInstance.currentCalendarTitle)")
+        
+        // remove & view data update
+        GlobalData.sharedInstance.calndarList.removeAll{ item in
+            item.title == GlobalData.sharedInstance.currentCalendarTitle
+        }
+        mainTabViewList = GlobalData.sharedInstance.calndarList
+        
+        // set current info
+        GlobalData.sharedInstance.currentCalendarTitle = GlobalData.sharedInstance.calndarList.first?.title ?? ""
+        
+        print("[MainViewModel] GlobalData calndarList count: \(GlobalData.sharedInstance.calndarList.count)")
+        print("[MainViewModel] GlobalData title: \(GlobalData.sharedInstance.currentCalendarTitle)")
+        
     }
 }
