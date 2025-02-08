@@ -7,11 +7,11 @@
 
 import SwiftUI
 
-class GlobalData {
+class GlobalData: ObservableObject {
     static let sharedInstance = GlobalData()
     public let calendarMaxCount: Int = 5
     
-    var calndarList: [CalendarItem] = []
+    @Published var calndarList: [CalendarItem] = []
     var currentCalendarTitle: String = "모든 일정"
     
     func initGlobalData() -> Bool {

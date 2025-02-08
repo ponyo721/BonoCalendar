@@ -44,7 +44,7 @@ struct CalendarCreateView: View {
         print("[CalendarCreateView] actionSaveBtn")
         
         var calendarCreateModel:CalendarCreateModel = CalendarCreateModel()
-        calendarCreateModel.title = "명철이랑 데이트"
+        calendarCreateModel.title = "병욱&명철&승용"
         calendarCreateModel.mainColor = .brown
         
         viewModel.createNewCalendar(calendarCreateModel)

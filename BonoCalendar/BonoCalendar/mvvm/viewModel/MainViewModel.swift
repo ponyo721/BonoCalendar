@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import Combine
 
 struct TabViewModel {
     var title:String
@@ -21,14 +22,14 @@ final class MainViewModel : ObservableObject {
     
     @Published var mainTabViewList: [CalendarItem] = GlobalData.sharedInstance.calndarList
     
+    private var cancellable: AnyCancellable?
+    
     init() {
         print("MainViewModel init")
         
-//        // load data
-//        guard GlobalData.sharedInstance.initGlobalData() else {
-//            print("[EnterViewModel] init Global data fail")
-//            return
-//        }
+        cancellable = GlobalData.sharedInstance.$calndarList.sink { [weak self] newValue in
+            self?.mainTabViewList = newValue
+        }
     }
  
     func actionAddCalendar() {
