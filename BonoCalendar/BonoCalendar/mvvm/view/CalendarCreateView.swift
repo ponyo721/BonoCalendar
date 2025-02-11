@@ -13,7 +13,6 @@ struct CalendarCreateView: View {
     @Environment(\.dismiss) var dismiss
     
     @State private var configure : CalendarCreateModel = CalendarCreateModel()
-    @State private var mainColor : Color = .black
     
     var body: some View {
         VStack {
@@ -28,7 +27,7 @@ struct CalendarCreateView: View {
             
             HStack() {
                 Text("Main Color : ")
-                ColorPicker("Main Color", selection: $mainColor)
+                ColorPicker("Main Color", selection: $configure.mainColor)
                     .frame(width: 30)
             }
             .padding(50)
@@ -43,9 +42,9 @@ struct CalendarCreateView: View {
     func actionSaveBtn() {
         print("[CalendarCreateView] actionSaveBtn")
         
-        var calendarCreateModel:CalendarCreateModel = CalendarCreateModel()
-        calendarCreateModel.title = "병욱&명철&승용"
-        calendarCreateModel.mainColor = .brown
+        var calendarCreateModel:CalendarItem = CalendarItem()
+        calendarCreateModel.title = configure.title
+        calendarCreateModel.mainColor = configure.mainColor
         
         viewModel.createNewCalendar(calendarCreateModel)
     }
